@@ -51,9 +51,32 @@ export default function Home() {
                         <div className="hidden md:flex items-center space-x-8">
                             <a href="#about" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Sobre mí</a>
                             <a href="#methodology" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Metodología</a>
-                            <a href="#services" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Entrenamiento</a>
+
+                            {/* Dropdown Personalizados */}
+                            <div className="relative group">
+                                <button className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-1 py-4">
+                                    Personalizados <i className="fas fa-chevron-down text-[10px] ml-1"></i>
+                                </button>
+                                <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
+                                    <a href="#services" onClick={() => setActiveTab('personal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Start Tenis</a>
+                                    <a href="#services" onClick={() => setActiveTab('personal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Performance Pack</a>
+                                    <a href="#services" onClick={() => setActiveTab('personal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Foundation Pack</a>
+                                </div>
+                            </div>
+
+                            {/* Dropdown Grupales */}
+                            <div className="relative group">
+                                <button className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-1 py-4">
+                                    Grupales <i className="fas fa-chevron-down text-[10px] ml-1"></i>
+                                </button>
+                                <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
+                                    <a href="#services" onClick={() => setActiveTab('grupal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Programa Juniors</a>
+                                    <a href="#services" onClick={() => setActiveTab('grupal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Programa After Office</a>
+                                </div>
+                            </div>
+
                             <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
-                                className="bg-gold-500 hover:bg-gold-400 text-black-900 px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                                className="bg-gold-500 hover:bg-gold-400 text-black-900 px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)] ml-4">
                                 Agenda tu clase
                             </a>
                         </div>
@@ -69,7 +92,20 @@ export default function Home() {
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
                             <a href="#about" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-gray-300 hover:text-gold-500">Sobre mí</a>
                             <a href="#methodology" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-gray-300 hover:text-gold-500">Metodología</a>
-                            <a href="#services" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-gray-300 hover:text-gold-500">Entrenamiento</a>
+
+                            <div className="py-2 text-left">
+                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Personalizados</span>
+                                <a href="#services" onClick={() => { setActiveTab('personal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Start Tenis</a>
+                                <a href="#services" onClick={() => { setActiveTab('personal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Performance Pack</a>
+                                <a href="#services" onClick={() => { setActiveTab('personal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Foundation Pack</a>
+                            </div>
+
+                            <div className="py-2 text-left border-t border-white/5">
+                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Programas Grupales</span>
+                                <a href="#services" onClick={() => { setActiveTab('grupal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa Juniors</a>
+                                <a href="#services" onClick={() => { setActiveTab('grupal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa After Office</a>
+                            </div>
+
                             <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
                                 className="block w-full mt-4 bg-gold-500 text-black-900 px-5 py-3 rounded font-bold">Agenda tu clase</a>
                         </div>
