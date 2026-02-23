@@ -443,6 +443,10 @@ export default function Home() {
                                         <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Junior Coaching</h4>
                                         <p className="text-gray-400 text-lg">Escuela de Formación Integral.</p>
                                     </div>
+                                    <div className="h-48 w-full rounded-2xl bg-black-900 mb-8 overflow-hidden relative group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-shadow">
+                                        <img src="/images/pack-juniors.jpg" alt="Junior Coaching Entrenamiento"
+                                            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
+                                    </div>
                                     <ul className="space-y-5 mb-12 flex-1">
                                         <li className="flex items-start gap-4 text-gray-300">
                                             <i className="fas fa-users text-gold-500 mt-1"></i>
