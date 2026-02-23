@@ -32,6 +32,7 @@ const LOCATIONS = [
 export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [modalSrc, setModalSrc] = useState(null);
+    const [activeTab, setActiveTab] = useState('personal');
 
     useEffect(() => {
         document.body.style.overflow = modalSrc ? 'hidden' : 'auto';
@@ -252,71 +253,191 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── SERVICES / PRICING ── */}
+            {/* ── PLANES Y PROGRAMAS ── */}
             <section id="services" className="py-24 bg-black-900 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-1/2 left-0 w-96 h-96 bg-gold-500/20 rounded-full blur-[100px]"></div>
-                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"></div>
+                {/* Decoration */}
+                <div className="absolute inset-0 opacity-20 pointer-events-none">
+                    <div className="absolute top-1/2 left-0 w-96 h-96 bg-gold-500/20 rounded-full blur-[150px]"></div>
+                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-[150px]"></div>
                 </div>
+
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-2">Planes de Entrenamiento</h2>
-                        <h3 className="text-3xl sm:text-4xl font-bold mb-4">Invierte en tu juego</h3>
-                        <p className="text-gray-400">Selecciona el plan que se adapte a tus objetivos competitivos.</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {/* Pack Performance */}
-                        <div className="bg-black-800 rounded-3xl p-8 border border-white/10 hover:border-gold-500/30 transition-all group flex flex-col">
-                            <div className="mb-6">
-                                <h4 className="text-2xl font-bold text-white mb-2">Performance</h4>
-                                <div className="flex items-baseline gap-1">
-                                    <span className="text-4xl font-bold text-gold-500">$100.000</span>
-                                    <span className="text-gray-400 text-sm">CLP</span>
-                                </div>
+                        <h2 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-2">Planes y Programas</h2>
+                        <h3 className="text-4xl sm:text-5xl font-bold mb-10">Entrena con Propósito.<br />Elige tu camino.</h3>
+
+                        {/* Tabs Navigation */}
+                        <div className="flex justify-center mb-4">
+                            <div className="inline-flex bg-black-800/80 backdrop-blur-md rounded-full p-1.5 border border-white/10 shadow-xl">
+                                <button
+                                    onClick={() => setActiveTab('personal')}
+                                    className={`relative z-10 px-6 sm:px-10 py-3.5 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'personal' ? 'bg-gold-500 text-black-900 shadow-[0_0_20px_rgba(212,175,55,0.4)]' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                                >
+                                    Entrenamiento Personalizado
+                                </button>
+                                <button
+                                    onClick={() => setActiveTab('grupal')}
+                                    className={`relative z-10 px-6 sm:px-10 py-3.5 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'grupal' ? 'bg-gold-500 text-black-900 shadow-[0_0_20px_rgba(212,175,55,0.4)]' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
+                                >
+                                    Programas Grupales
+                                </button>
                             </div>
-                            <div className="h-96 w-full rounded-xl bg-gray-800 mb-6 overflow-hidden relative">
-                                <img src="/images/pack-performance.jpg" alt="Pack Performance"
-                                    className="w-full h-full object-cover object-top opacity-80 group-hover:scale-110 transition-transform duration-500" />
-                            </div>
-                            <ul className="space-y-4 mb-8 flex-1">
-                                <li className="flex items-center gap-3 text-gray-300"><i className="fas fa-check-circle text-gold-500"></i><span>6 Horas de Entrenamiento guiado</span></li>
-                                <li className="flex items-center gap-3 text-gray-300"><i className="fas fa-video text-gold-500"></i><span>Video Análisis (1ra y última sesión)</span></li>
-                                <li className="flex items-center gap-3 text-gray-300"><i className="fas fa-clipboard-list text-gold-500"></i><span>Full feedback del proceso</span></li>
-                            </ul>
-                            <a href="https://wa.me/56932732917?text=Hola,%20me%20interesa%20el%20Pack%20Performance" target="_blank" rel="noopener noreferrer"
-                                className="w-full block text-center bg-transparent border border-white/20 hover:bg-white hover:text-black-900 text-white font-bold py-3 rounded-xl transition-all">
-                                Contratar Pack
-                            </a>
                         </div>
-                        {/* Pack Foundation */}
-                        <div className="bg-black-800 rounded-3xl p-1 relative border border-gold-500 shadow-[0_0_30px_rgba(212,175,55,0.15)] flex flex-col">
-                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold-500 text-black-900 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                                Recomendado
-                            </div>
-                            <div className="bg-black-800 rounded-[22px] p-7 h-full flex flex-col">
-                                <div className="mb-6">
-                                    <h4 className="text-2xl font-bold text-white mb-2">Foundation</h4>
-                                    <div className="flex items-baseline gap-1">
-                                        <span className="text-4xl font-bold text-gold-500">$200.000</span>
-                                        <span className="text-gray-400 text-sm">CLP</span>
+                    </div>
+
+                    <div className="max-w-5xl mx-auto min-h-[500px]">
+
+                        {/* TAB A: Personalizado */}
+                        {activeTab === 'personal' && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+
+                                {/* Card 1: Performance Pack */}
+                                <div className="bg-black-800/40 backdrop-blur-md rounded-3xl p-10 border border-white/5 hover:border-gold-500/30 hover:bg-black-800/80 transition-all duration-500 group hover:-translate-y-3 shadow-xl flex flex-col">
+                                    <div className="mb-8">
+                                        <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
+                                            1 a 1
+                                        </span>
+                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Performance Pack</h4>
+                                        <p className="text-gray-400 text-lg">Mejora Técnica y Táctica Acelerada.</p>
+                                    </div>
+                                    <ul className="space-y-5 mb-12 flex-1">
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-check text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Sesiones 1 a 1 con Coach Quiroz</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-check text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Corrección biomecánica</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-check text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Estructuración de mentalidad competitiva</span>
+                                        </li>
+                                    </ul>
+                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20consultar%20disponibilidad%20para%20el%20Performance%20Pack."
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
+                                        Consultar disponibilidad
+                                    </a>
+                                </div>
+
+                                {/* Card 2: Foundation Pack (Premium) */}
+                                <div className="bg-gradient-to-br from-gold-500/40 to-black-800 rounded-3xl p-[2px] relative shadow-[0_0_40px_rgba(212,175,55,0.15)] flex flex-col hover:-translate-y-3 transition-transform duration-500 overflow-hidden group">
+                                    <div className="absolute inset-0 bg-gradient-to-b from-gold-500 to-gold-700 opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+
+                                    <div className="bg-[#111] hover:bg-[#151515] transition-colors duration-500 rounded-[22px] p-10 h-full flex flex-col relative z-10">
+                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gold-400 to-gold-600 text-black-900 px-6 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-lg">
+                                            Opción Premium
+                                        </div>
+                                        <div className="mb-8 mt-4">
+                                            <span className="inline-block border border-gold-500 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5 shadow-[0_0_10px_rgba(212,175,55,0.2)]">
+                                                Inmersión Competitiva
+                                            </span>
+                                            <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Foundation Pack</h4>
+                                            <p className="text-gray-400 text-lg">El Programa de Inmersión Competitiva Total.</p>
+                                        </div>
+                                        <ul className="space-y-5 mb-12 flex-1">
+                                            <li className="flex items-start gap-4 text-white font-medium">
+                                                <i className="fas fa-star text-gold-500 mt-1"></i>
+                                                <span className="leading-relaxed">Todo lo del Performance Pack</span>
+                                            </li>
+                                            <li className="flex items-start gap-4 text-gray-300">
+                                                <i className="fas fa-check text-gold-500 mt-1"></i>
+                                                <span className="leading-relaxed">Acompañamiento presencial en Torneos</span>
+                                            </li>
+                                            <li className="flex items-start gap-4 text-gray-300">
+                                                <i className="fas fa-check text-gold-500 mt-1"></i>
+                                                <span className="leading-relaxed">Lectura de partidos en vivo</span>
+                                            </li>
+                                            <li className="flex items-start gap-4 text-gray-300">
+                                                <i className="fas fa-check text-gold-500 mt-1"></i>
+                                                <span className="leading-relaxed">Feedback post-partido</span>
+                                            </li>
+                                        </ul>
+                                        <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20postular%20al%20Foundation%20Pack."
+                                            target="_blank" rel="noopener noreferrer"
+                                            className="w-full text-center bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black-900 font-bold py-4 rounded-xl transition-all shadow-xl hover:shadow-gold-500/30 text-lg block">
+                                            Postular al Foundation Pack
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="h-96 w-full rounded-xl bg-gray-800 mb-6 overflow-hidden relative">
-                                    <img src="/images/pack-foundation.jpg" alt="Pack Foundation"
-                                        className="w-full h-full object-cover object-top opacity-80 transition-transform duration-500" />
-                                </div>
-                                <ul className="space-y-4 mb-8 flex-1">
-                                    <li className="flex items-center gap-3 text-gray-300"><i className="fas fa-check-circle text-gold-500"></i><span>12 Horas de Entrenamiento guiado</span></li>
-                                    <li className="flex items-center gap-3 text-gray-300"><i className="fas fa-video text-gold-500"></i><span>Video Análisis (1ra y última sesión)</span></li>
-                                    <li className="flex items-center gap-3 text-gray-300"><i className="fas fa-comments text-gold-500"></i><span>Full feedback del proceso</span></li>
-                                    <li className="flex items-center gap-3 text-white font-semibold"><i className="fas fa-plus-circle text-gold-500"></i><span>Bonus: Seguimiento en competencia</span></li>
-                                </ul>
-                                <a href="https://wa.me/56932732917?text=Hola,%20me%20interesa%20el%20Pack%20Foundation" target="_blank" rel="noopener noreferrer"
-                                    className="w-full block text-center bg-gold-500 hover:bg-gold-400 text-black-900 font-bold py-3 rounded-xl transition-all shadow-lg transform hover:-translate-y-1">
-                                    Contratar Pack
-                                </a>
                             </div>
-                        </div>
+                        )}
+
+                        {/* TAB B: Grupales */}
+                        {activeTab === 'grupal' && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+
+                                {/* Card 3: Junior Coaching */}
+                                <div className="bg-black-800/40 backdrop-blur-md rounded-3xl p-10 border border-white/5 hover:border-gold-500/30 hover:bg-black-800/80 transition-all duration-500 group hover:-translate-y-3 shadow-xl flex flex-col">
+                                    <div className="mb-8">
+                                        <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
+                                            Formativo
+                                        </span>
+                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Junior Coaching</h4>
+                                        <p className="text-gray-400 text-lg">Escuela de Formación Integral.</p>
+                                    </div>
+                                    <ul className="space-y-5 mb-12 flex-1">
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-users text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Grupos reducidos (máx. 12)</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-user-plus text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">2 entrenadores en cancha</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-chart-line text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Enfoque en proceso y técnica progresiva</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-clock text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">8 hrs mensuales</span>
+                                        </li>
+                                    </ul>
+                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20solicitar%20un%20cupo%20para%20el%20Junior%20Coaching."
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
+                                        Solicitar cupo Junior
+                                    </a>
+                                </div>
+
+                                {/* Card 4: After Office Coaching */}
+                                <div className="bg-black-800/40 backdrop-blur-md rounded-3xl p-10 border border-white/5 hover:border-gold-500/30 hover:bg-black-800/80 transition-all duration-500 group hover:-translate-y-3 shadow-xl flex flex-col">
+                                    <div className="mb-8">
+                                        <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
+                                            Adultos
+                                        </span>
+                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">After Office Coaching</h4>
+                                        <p className="text-gray-400 text-lg">Entrenamiento de Alto Nivel para Adultos.</p>
+                                    </div>
+                                    <ul className="space-y-5 mb-12 flex-1">
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-user-friends text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Grupos ultra-reducidos (máx. 6)</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-crown text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Dirigido por Coach Quiroz</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-chess-board text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Entrenamiento táctico real</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-clock text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">12 hrs mensuales</span>
+                                        </li>
+                                    </ul>
+                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20solicitar%20un%20cupo%20para%20el%20After%20Office%20Coaching."
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
+                                        Solicitar cupo After Office
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+
                     </div>
                 </div>
             </section>
