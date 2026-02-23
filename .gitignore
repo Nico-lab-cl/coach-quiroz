@@ -1,24 +1,29 @@
-# Dependencias de Node.js (herramienta de optimización - no necesaria en el sitio)
+# Next.js
+.next/
+out/
+build/
+
+# Dependencias
 node_modules/
-package.json
-package-lock.json
+
+# Variables de entorno (NUNCA commitear)
+.env
+.env.local
+.env.production
+
+# Archivos pesados de origen (no necesarios en el sitio)
+Coach Quiroz Gmail/
+Proyecto web/
+
+# Archivos temporales
+Tennis Software.docx
+Coach Quiroz JPG-01 (1).jpg
+LogoFinalAQCoaching.jpeg
+index.html
+
+# Herramienta de optimización (ya no se necesita)
 optimize-images.mjs
 
-# Archivos de origen pesados (no necesarios en el sitio web)
-Coach Quiroz Gmail/Coach QuirozPIC/*.MOV
-Coach Quiroz Gmail/Coach QuirozPIC/*.mp4
-Coach Quiroz Gmail/
-
-# Documentos Word
-Proyecto web/
-Tennis Software.docx
-
-# Imagen original del logo (se usa la optimizada en ./images/)
-LogoFinalAQCoaching.jpeg
-
-# Coach Quiroz JPG original
-Coach Quiroz JPG-01 (1).jpg
-
-# Archivos del sistema
+# Sistema
 .DS_Store
 Thumbs.db
