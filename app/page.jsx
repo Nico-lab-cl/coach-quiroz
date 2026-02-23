@@ -264,7 +264,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-2">Planes y Programas</h2>
-                        <h3 className="text-4xl sm:text-5xl font-bold mb-10">Entrena con Propósito.<br />Elige tu camino.</h3>
+                        <h3 className="text-4xl sm:text-5xl font-bold mb-10">Transforma tu tenis.<br /><span className="text-gold-500">Entrena con propósito.</span></h3>
 
                         {/* Tabs Navigation */}
                         <div className="flex justify-center mb-4">
@@ -285,11 +285,41 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="max-w-5xl mx-auto min-h-[500px]">
+                    <div className="max-w-6xl mx-auto min-h-[500px]">
 
                         {/* TAB A: Personalizado */}
                         {activeTab === 'personal' && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+                            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 animate-fade-in-up">
+
+                                {/* Card 1: START TENIS */}
+                                <div className="bg-black-800/40 backdrop-blur-md rounded-3xl p-10 border border-white/5 hover:border-gold-500/30 hover:bg-black-800/80 transition-all duration-500 group hover:-translate-y-3 shadow-xl flex flex-col">
+                                    <div className="mb-8">
+                                        <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
+                                            Principiante
+                                        </span>
+                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Start Tenis</h4>
+                                        <p className="text-gray-400 text-lg">Tu primer paso en la cancha.</p>
+                                    </div>
+                                    <ul className="space-y-5 mb-12 flex-1">
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-check text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Diseñado para quienes nunca han jugado tenis</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-check text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">6 horas de entrenamiento guiado (Individual o dúo)</span>
+                                        </li>
+                                        <li className="flex items-start gap-4 text-gray-300">
+                                            <i className="fas fa-check text-gold-500 mt-1"></i>
+                                            <span className="leading-relaxed">Enfoque en fundamentos técnicos y coordinación</span>
+                                        </li>
+                                    </ul>
+                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20el%20plan%20START%20TENIS%20para%20empezar%20desde%20cero."
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
+                                        Comenzar en el Tenis
+                                    </a>
+                                </div>
 
                                 {/* Card 1: Performance Pack */}
                                 <div className="bg-black-800/40 backdrop-blur-md rounded-3xl p-10 border border-white/5 hover:border-gold-500/30 hover:bg-black-800/80 transition-all duration-500 group hover:-translate-y-3 shadow-xl flex flex-col">
@@ -366,7 +396,7 @@ export default function Home() {
 
                         {/* TAB B: Grupales */}
                         {activeTab === 'grupal' && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up max-w-4xl mx-auto">
 
                                 {/* Card 3: Junior Coaching */}
                                 <div className="bg-black-800/40 backdrop-blur-md rounded-3xl p-10 border border-white/5 hover:border-gold-500/30 hover:bg-black-800/80 transition-all duration-500 group hover:-translate-y-3 shadow-xl flex flex-col">
