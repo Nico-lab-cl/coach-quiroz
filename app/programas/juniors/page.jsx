@@ -34,7 +34,7 @@ export default function JuniorCoaching() {
                         <div className="order-2 lg:order-1">
                             <div className="relative group">
                                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl blur-lg transition-all opacity-50 group-hover:opacity-100 group-hover:duration-200"></div>
-                                <img src="/images/pack-juniors-optimized.webp" alt="Junior Coaching" className="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-2 border-white/10 grayscale-[20%] hover:grayscale-0 transition-all duration-500" />
+                                <img src="/images/training-kids.jpg" alt="Junior Coaching" className="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-2 border-white/10 grayscale-[20%] hover:grayscale-0 transition-all duration-500" />
                             </div>
                         </div>
                         <div className="order-1 lg:order-2">
