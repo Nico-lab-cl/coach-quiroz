@@ -444,7 +444,7 @@ export default function Home() {
                                         <p className="text-gray-400 text-lg">Escuela de Formación Integral.</p>
                                     </div>
                                     <div className="h-48 w-full rounded-2xl bg-black-900 mb-8 overflow-hidden relative group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-shadow">
-                                        <img src="/images/pack-juniors.jpg" alt="Junior Coaching Entrenamiento"
+                                        <img src="/images/pack-juniors-optimized.webp" alt="Junior Coaching Entrenamiento"
                                             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
                                     </div>
                                     <ul className="space-y-5 mb-12 flex-1">
