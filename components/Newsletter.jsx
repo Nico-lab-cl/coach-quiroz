@@ -34,61 +34,52 @@ export default function Newsletter() {
     };
 
     return (
-        <section className="relative py-24 overflow-hidden">
-            {/* Full background image with overlay */}
+        <section className="relative py-28 overflow-hidden bg-[#0a0a0a]">
+            {/* Background: image with strong dark overlay */}
             <div className="absolute inset-0 z-0">
                 <img
                     src="/images/gallery-10.jpg"
                     alt="Newsletter Background"
-                    className="w-full h-full object-cover object-center grayscale opacity-30"
+                    className="w-full h-full object-cover object-center opacity-15"
                 />
-                {/* Strong dark overlay so text is always readable */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0a0500] via-black/95 to-[#0a0500]"></div>
-                {/* Decorative gold glow spots */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/20 rounded-full blur-[130px] pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div>
             </div>
 
-            {/* Decorative diagonal lines */}
-            <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full" style={{
-                    backgroundImage: 'repeating-linear-gradient(45deg, #D4AF37 0, #D4AF37 1px, transparent 0, transparent 50%)',
-                    backgroundSize: '30px 30px'
-                }}></div>
+            {/* Gold glow center */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-[#D4AF37]/10 rounded-full blur-[100px]"></div>
             </div>
 
-            <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-                {/* Top Divider Line */}
-                <div className="flex items-center justify-center gap-4 mb-10">
-                    <div className="h-px flex-1 max-w-[80px] bg-gradient-to-r from-transparent to-gold-500/60"></div>
-                    <i className="fas fa-tennis-ball text-gold-500 text-xl"></i>
-                    <div className="h-px flex-1 max-w-[80px] bg-gradient-to-l from-transparent to-gold-500/60"></div>
+                {/* Badge */}
+                <div className="flex items-center justify-center gap-3 mb-8">
+                    <div className="h-px w-10 bg-[#D4AF37]/40"></div>
+                    <span className="text-[#D4AF37] text-[10px] font-black tracking-[0.4em] uppercase">Boletín Oficial</span>
+                    <div className="h-px w-10 bg-[#D4AF37]/40"></div>
                 </div>
 
-                {/* Label */}
-                <span className="inline-block border border-gold-500/40 bg-gold-500/10 text-gold-400 text-[10px] font-black tracking-[0.4em] uppercase px-5 py-2 rounded-full mb-6 shadow-[0_0_20px_rgba(212,175,55,0.15)]">
-                    Boletín Oficial
-                </span>
-
-                {/* Heading */}
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 tracking-tight leading-tight">
-                    <span className="text-white">Ve un paso</span><br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-500">
+                {/* Heading — white title + gold word clearly separated */}
+                <h2 className="font-black tracking-tight leading-none mb-6">
+                    <span className="block text-5xl sm:text-6xl lg:text-7xl text-white uppercase">Ve un paso</span>
+                    <span className="block text-5xl sm:text-6xl lg:text-7xl uppercase mt-1" style={{ color: '#D4AF37', textShadow: '0 0 40px rgba(212,175,55,0.4)' }}>
                         adelante
                     </span>
                 </h2>
 
+                {/* Thin divider */}
+                <div className="w-16 h-px bg-[#D4AF37]/50 mx-auto mb-8"></div>
+
                 {/* Subtitle */}
-                <p className="text-gray-300/80 mb-10 max-w-xl mx-auto leading-relaxed text-lg font-light">
-                    Suscríbete a nuestro boletín para recibir tips tácticos y noticias del mundo del alto rendimiento.
+                <p className="text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed text-base sm:text-lg font-light">
+                    Suscríbete para recibir <span className="text-white font-medium">tips tácticos</span> y noticias del mundo del alto rendimiento directamente en tu correo.
                 </p>
 
                 {/* Form */}
-                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto justify-center">
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
                     <div className="relative flex-1">
                         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <i className="fas fa-envelope text-gold-500/60"></i>
+                            <i className="fas fa-envelope text-[#D4AF37]/60 text-sm"></i>
                         </div>
                         <input
                             type="email"
@@ -97,19 +88,19 @@ export default function Newsletter() {
                             placeholder="tu@correo.com"
                             required
                             disabled={status === 'loading'}
-                            className="w-full bg-white/5 backdrop-blur-md border border-white/20 text-white rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:border-gold-500/70 focus:bg-white/10 transition-all placeholder-gray-500 disabled:opacity-50"
+                            className="w-full bg-white/5 border border-white/15 hover:border-[#D4AF37]/40 focus:border-[#D4AF37]/70 text-white rounded-xl py-4 pl-11 pr-4 focus:outline-none transition-all placeholder-gray-600 disabled:opacity-50 text-sm"
                         />
                     </div>
                     <button
                         type="submit"
                         disabled={status === 'loading'}
-                        className="relative overflow-hidden bg-gradient-to-r from-gold-500 to-yellow-500 hover:from-gold-400 hover:to-yellow-400 text-black font-black px-8 py-4 rounded-xl transition-all disabled:opacity-70 flex w-full sm:w-auto items-center justify-center gap-2 group shadow-[0_0_25px_rgba(212,175,55,0.3)] hover:shadow-[0_0_35px_rgba(212,175,55,0.5)] uppercase tracking-widest text-sm"
+                        className="flex items-center justify-center gap-2 bg-[#D4AF37] hover:bg-[#e8c547] active:scale-95 text-black font-black px-8 py-4 rounded-xl transition-all disabled:opacity-60 uppercase tracking-widest text-xs shadow-[0_0_30px_rgba(212,175,55,0.25)] hover:shadow-[0_0_40px_rgba(212,175,55,0.4)] whitespace-nowrap group"
                     >
                         {status === 'loading' ? (
-                            <i className="fas fa-circle-notch fa-spin text-lg"></i>
+                            <i className="fas fa-circle-notch fa-spin"></i>
                         ) : (
                             <>
-                                Unirme <i className="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                Unirme <i className="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
                             </>
                         )}
                     </button>
@@ -117,18 +108,18 @@ export default function Newsletter() {
 
                 {/* Status Messages */}
                 {status === 'success' && (
-                    <div className="mt-6 inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-medium rounded-full px-5 py-2">
+                    <div className="mt-5 inline-flex items-center gap-2 bg-green-500/10 border border-green-400/30 text-green-400 text-sm font-medium rounded-full px-5 py-2">
                         <i className="fas fa-check-circle"></i> <span>{message}</span>
                     </div>
                 )}
                 {status === 'error' && (
-                    <div className="mt-6 inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/30 text-rose-400 text-sm font-medium rounded-full px-5 py-2">
+                    <div className="mt-5 inline-flex items-center gap-2 bg-rose-500/10 border border-rose-400/30 text-rose-400 text-sm font-medium rounded-full px-5 py-2">
                         <i className="fas fa-exclamation-circle"></i> <span>{message}</span>
                     </div>
                 )}
 
-                {/* Bottom fine print */}
-                <p className="mt-8 text-gray-600 text-xs tracking-widest uppercase">Sin spam. Cancela cuando quieras.</p>
+                {/* Fine print */}
+                <p className="mt-8 text-gray-600 text-xs tracking-widest uppercase">Sin spam &nbsp;·&nbsp; Cancela cuando quieras</p>
             </div>
         </section>
     );
