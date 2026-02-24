@@ -25,8 +25,10 @@ export default function AfterOfficeCoaching() {
             {/* Exclusive Hero Section */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-rose-900/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
-                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-900/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
+                    <img src="/images/gallery-08.jpg" alt="Fondo After Office" className="w-full h-full object-cover opacity-[0.15] grayscale contrast-125" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/95 via-[#050505]/80 to-[#050505]"></div>
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-rose-900/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
+                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-900/20 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -96,6 +98,73 @@ export default function AfterOfficeCoaching() {
                                     Asegurar mi cupo <i className="fab fa-whatsapp text-lg"></i>
                                 </span>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* VIP Locations Section */}
+            <section className="py-24 relative bg-[#050505] border-t border-rose-500/10 overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <img src="/images/gallery-07.jpg" className="w-full h-full object-cover opacity-5 grayscale" alt="Fondo Mapa" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]"></div>
+                </div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="text-center mb-16">
+                        <span className="inline-block border border-rose-500/30 bg-rose-500/10 text-rose-500 text-xs font-bold tracking-[0.3em] uppercase px-4 py-1.5 rounded-full mb-4 shadow-[0_0_15px_rgba(244,63,94,0.2)]">
+                            Sedes Exclusivas
+                        </span>
+                        <h2 className="text-4xl font-light mb-4 tracking-tight">Nuestras <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">Canchas</span></h2>
+                        <p className="text-gray-400 max-w-2xl mx-auto font-light">Desconecta en instalaciones de primer nivel, diseñadas para brindar privacidad, comodidad y un ambiente puramente enfocado en tu desarrollo.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            {/* Card 1 */}
+                            <div className="bg-[#0a0a0a]/80 backdrop-blur-md border border-white/5 p-6 rounded-2xl flex items-center gap-6 hover:border-rose-500/50 hover:bg-rose-950/20 transition-all hover:scale-[1.02] cursor-default group">
+                                <div className="w-16 h-16 bg-rose-500/10 rounded-full flex items-center justify-center text-rose-500 text-2xl group-hover:bg-rose-500 group-hover:text-black group-hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] transition-all shrink-0">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-1">Club El Refugio</h4>
+                                    <p className="text-gray-500 font-light tracking-wide">Viña del Mar</p>
+                                </div>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="bg-[#0a0a0a]/80 backdrop-blur-md border border-white/5 p-6 rounded-2xl flex items-center gap-6 hover:border-rose-500/50 hover:bg-rose-950/20 transition-all hover:scale-[1.02] cursor-default group">
+                                <div className="w-16 h-16 bg-rose-500/10 rounded-full flex items-center justify-center text-rose-500 text-2xl group-hover:bg-rose-500 group-hover:text-black group-hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] transition-all shrink-0">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-1">Club El Salto</h4>
+                                    <p className="text-gray-500 font-light tracking-wide">Viña del Mar</p>
+                                </div>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="bg-[#0a0a0a]/80 backdrop-blur-md border border-white/5 p-6 rounded-2xl flex items-center gap-6 hover:border-rose-500/50 hover:bg-rose-950/20 transition-all hover:scale-[1.02] cursor-default group">
+                                <div className="w-16 h-16 bg-rose-500/10 rounded-full flex items-center justify-center text-rose-500 text-2xl group-hover:bg-rose-500 group-hover:text-black group-hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] transition-all shrink-0">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-1">Club de Tenis Con Con</h4>
+                                    <p className="text-gray-500 font-light tracking-wide">Con Con</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Map iframe */}
+                        <div className="h-[450px] rounded-3xl overflow-hidden border border-rose-500/20 shadow-[0_10px_40px_rgba(244,63,94,0.1)] relative group">
+                            <div className="absolute inset-0 bg-rose-900/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none z-10"></div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106981.42823617181!2d-71.60223594164893!3d-33.015243888371306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8ea73767cd%3A0xe6bf4b65dd4b105a!2sVi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1714588265000!5m2!1ses!2scl"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="grayscale-[90%] contrast-150 opacity-70 group-hover:grayscale-[40%] group-hover:opacity-100 transition-all duration-700"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

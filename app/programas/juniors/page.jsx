@@ -22,10 +22,11 @@ export default function JuniorCoaching() {
 
             {/* Energetic Hero Section */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-                {/* Background energetic shapes */}
-                <div className="absolute inset-0 z-0 opacity-30">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-[150px] mix-blend-screen animate-pulse"></div>
-                    <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-400 rounded-full blur-[120px] mix-blend-screen"></div>
+                {/* Background Image Banner */}
+                <div className="absolute inset-0 z-0">
+                    <img src="/images/training-kids.jpg" alt="Fondo Juniors" className="w-full h-full object-cover opacity-[0.15] grayscale" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/80 to-[#0b1120]"></div>
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-[150px] mix-blend-screen animate-pulse opacity-50"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -139,6 +140,73 @@ export default function JuniorCoaching() {
                             <div className="absolute bottom-6 left-6">
                                 <h3 className="text-xl font-bold text-white">Diversión Garantizada</h3>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Locations Section */}
+            <section className="py-20 relative bg-[#0f172a] border-t border-blue-500/10 overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <img src="/images/gallery-06.jpg" className="w-full h-full object-cover opacity-5" alt="Fondo Mapa" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-[#0f172a]"></div>
+                </div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="text-center mb-16">
+                        <span className="inline-block border border-blue-400/50 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-4 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+                            Instalaciones
+                        </span>
+                        <h2 className="text-4xl font-black mb-4 tracking-tight">Canchas <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Oficiales</span></h2>
+                        <p className="text-blue-100/60 max-w-2xl mx-auto">Nuestras clases se imparten en los mejores clubes de la región, garantizando canchas de primer nivel y un entorno seguro.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            {/* Card 1 */}
+                            <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-blue-400 hover:bg-blue-900/20 transition-all hover:scale-[1.02] cursor-default group">
+                                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all shrink-0">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-1">Club El Refugio</h4>
+                                    <p className="text-blue-200/60 font-medium">Viña del Mar</p>
+                                </div>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-blue-400 hover:bg-blue-900/20 transition-all hover:scale-[1.02] cursor-default group">
+                                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all shrink-0">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-1">Club El Salto</h4>
+                                    <p className="text-blue-200/60 font-medium">Viña del Mar</p>
+                                </div>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all hover:scale-[1.02] cursor-default group">
+                                <div className="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center text-cyan-400 text-2xl group-hover:bg-cyan-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all shrink-0">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-bold text-white mb-1">Club de Tenis Con Con</h4>
+                                    <p className="text-cyan-200/60 font-medium">Con Con</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Map iframe */}
+                        <div className="h-[450px] rounded-3xl overflow-hidden border border-blue-500/30 shadow-[0_10px_40px_rgba(59,130,246,0.15)] relative group">
+                            <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none z-10"></div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106981.42823617181!2d-71.60223594164893!3d-33.015243888371306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8ea73767cd%3A0xe6bf4b65dd4b105a!2sVi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1714588265000!5m2!1ses!2scl"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="grayscale-[70%] contrast-125 opacity-90 group-hover:grayscale-[20%] group-hover:opacity-100 transition-all duration-700"
+                            ></iframe>
                         </div>
                     </div>
                 </div>

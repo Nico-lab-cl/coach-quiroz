@@ -37,7 +37,9 @@ export default function Personalizados() {
             {/* Cinematic Hero */}
             <section className="relative pt-40 pb-20 lg:pt-56 lg:pb-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-gradient-to-b from-gold-600/20 to-transparent rounded-full blur-[100px] opacity-50"></div>
+                    <img src="/images/hero-bg.jpg" alt="Fondo Privados" className="w-full h-full object-cover opacity-[0.25] grayscale contrast-125" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/95 via-[#000000]/80 to-[#000000]"></div>
+                    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-gradient-to-b from-gold-600/20 to-transparent rounded-full blur-[100px] opacity-60"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 text-center">
@@ -160,6 +162,87 @@ export default function Personalizados() {
                         </a>
                     </div>
 
+                </div>
+            </section>
+
+            {/* Elite VIP Locations Section */}
+            <section className="py-24 relative bg-[#000000] border-t border-gold-500/10 overflow-hidden mt-20">
+                <div className="absolute inset-0 z-0">
+                    <img src="/images/pack-foundation.jpg" className="w-full h-full object-cover opacity-[0.03] grayscale" alt="Fondo Mapa Elite" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-[#000000]"></div>
+                </div>
+                <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+                    <div className="text-center mb-20 relative">
+                        {/* Elite Decorative Line */}
+                        <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/20 to-transparent -z-10"></div>
+
+                        <span className="inline-block bg-[#000] border border-gold-500/30 text-gold-500 text-[10px] font-black tracking-[0.4em] uppercase px-6 py-2 rounded-full mb-6 shadow-[0_0_20px_rgba(212,175,55,0.15)]">
+                            Sedes y Operaciones
+                        </span>
+                        <h2 className="text-5xl font-light mb-6 tracking-tight">Centros de <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-600">Alto Rendimiento</span></h2>
+                        <p className="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">Infraestructura seleccionada meticulosamente para garantizar la máxima eficiencia, privacidad y enfoque durante tu desarrollo técnico y mental.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div className="space-y-6">
+                            {/* Card 1 */}
+                            <div className="bg-[#050505] backdrop-blur-md border border-white/5 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-gold-500/40 hover:bg-gold-900/10 transition-all duration-500 hover:-translate-y-1 cursor-default group relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="w-16 h-16 bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20 rounded-full flex items-center justify-center text-gold-500 text-2xl group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all shrink-0">
+                                    <i className="fas fa-gem"></i>
+                                </div>
+                                <div className="relative z-10">
+                                    <h4 className="text-xl font-bold text-white mb-1 uppercase tracking-wider text-sm">Club El Refugio</h4>
+                                    <p className="text-gray-500 font-light tracking-wide text-sm flex items-center gap-2">
+                                        <i className="fas fa-map-marker-alt text-gold-500/50"></i> Viña del Mar
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 2 */}
+                            <div className="bg-[#050505] backdrop-blur-md border border-white/5 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-gold-500/40 hover:bg-gold-900/10 transition-all duration-500 hover:-translate-y-1 cursor-default group relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="w-16 h-16 bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20 rounded-full flex items-center justify-center text-gold-500 text-2xl group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all shrink-0">
+                                    <i className="fas fa-gem"></i>
+                                </div>
+                                <div className="relative z-10">
+                                    <h4 className="text-xl font-bold text-white mb-1 uppercase tracking-wider text-sm">Club El Salto</h4>
+                                    <p className="text-gray-500 font-light tracking-wide text-sm flex items-center gap-2">
+                                        <i className="fas fa-map-marker-alt text-gold-500/50"></i> Viña del Mar
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Card 3 */}
+                            <div className="bg-[#050505] backdrop-blur-md border border-white/5 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-gold-500/40 hover:bg-gold-900/10 transition-all duration-500 hover:-translate-y-1 cursor-default group relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="w-16 h-16 bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20 rounded-full flex items-center justify-center text-gold-500 text-2xl group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all shrink-0">
+                                    <i className="fas fa-gem"></i>
+                                </div>
+                                <div className="relative z-10">
+                                    <h4 className="text-xl font-bold text-white mb-1 uppercase tracking-wider text-sm">Club de Tenis Con Con</h4>
+                                    <p className="text-gray-500 font-light tracking-wide text-sm flex items-center gap-2">
+                                        <i className="fas fa-map-marker-alt text-gold-500/50"></i> Con Con
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Map iframe */}
+                        <div className="h-[500px] overflow-hidden border border-gold-500/20 shadow-[0_10px_50px_rgba(212,175,55,0.08)] relative group p-2 bg-[#050505]">
+                            <div className="w-full h-full relative">
+                                <div className="absolute inset-0 bg-gold-500/10 group-hover:bg-transparent transition-colors duration-700 pointer-events-none z-10 border border-gold-500/30 m-2"></div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106981.42823617181!2d-71.60223594164893!3d-33.015243888371306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8ea73767cd%3A0xe6bf4b65dd4b105a!2sVi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1714588265000!5m2!1ses!2scl"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    className="grayscale-[100%] contrast-150 opacity-60 group-hover:grayscale-[50%] group-hover:opacity-100 transition-all duration-1000"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
