@@ -38,15 +38,15 @@ export default function Newsletter() {
             {/* Full background image with overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/images/hero-bg.jpg"
+                    src="/images/gallery-10.jpg"
                     alt="Newsletter Background"
-                    className="w-full h-full object-cover object-center grayscale"
+                    className="w-full h-full object-cover object-center grayscale opacity-30"
                 />
-                {/* Dark gradient overlay with gold tint */}
-                <div className="absolute inset-0 bg-gradient-to-br from-black via-black/80 to-[#1a1100]"></div>
+                {/* Strong dark overlay so text is always readable */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0a0500] via-black/95 to-[#0a0500]"></div>
                 {/* Decorative gold glow spots */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/15 rounded-full blur-[130px] pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/20 rounded-full blur-[130px] pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold-600/15 rounded-full blur-[100px] pointer-events-none"></div>
             </div>
 
             {/* Decorative diagonal lines */}
