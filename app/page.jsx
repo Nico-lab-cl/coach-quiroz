@@ -387,11 +387,11 @@ export default function Home() {
                                 </div>
 
                                 {/* Card 2: Foundation Pack (Premium) */}
-                                <div className="bg-gradient-to-br from-gold-500/40 to-black-800 rounded-3xl p-[2px] relative shadow-[0_0_40px_rgba(212,175,55,0.15)] flex flex-col hover:-translate-y-3 transition-transform duration-500 overflow-hidden group">
-                                    <div className="absolute inset-0 bg-gradient-to-b from-gold-500 to-gold-700 opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                                <div className="bg-gradient-to-br from-gold-500/40 to-black-800 rounded-3xl p-[2px] relative shadow-[0_0_40px_rgba(212,175,55,0.15)] flex flex-col hover:-translate-y-3 transition-transform duration-500 group">
+                                    <div className="absolute inset-0 bg-gradient-to-b from-gold-500 to-gold-700 opacity-20 group-hover:opacity-40 transition-opacity duration-500 rounded-3xl"></div>
 
                                     <div className="bg-[#111] hover:bg-[#151515] transition-colors duration-500 rounded-[22px] p-10 h-full flex flex-col relative z-10">
-                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gold-400 to-gold-600 text-black-900 px-6 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-lg">
+                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gold-400 to-gold-600 text-black-900 px-6 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-lg whitespace-nowrap">
                                             Opción Premium
                                         </div>
                                         <div className="mb-8 mt-4">

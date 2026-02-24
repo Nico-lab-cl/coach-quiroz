@@ -109,11 +109,11 @@ export default function Personalizados() {
                     </div>
 
                     {/* Pack 3: Foundation Pack */}
-                    <div className="bg-gradient-to-br from-gold-500/40 to-black-800 rounded-3xl p-[2px] relative shadow-[0_0_40px_rgba(212,175,55,0.15)] flex flex-col overflow-hidden group">
-                        <div className="absolute inset-0 bg-gradient-to-b from-gold-500 to-gold-700 opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div className="bg-gradient-to-br from-gold-500/40 to-black-800 rounded-3xl p-[2px] relative shadow-[0_0_40px_rgba(212,175,55,0.15)] flex flex-col group">
+                        <div className="absolute inset-0 bg-gradient-to-b from-gold-500 to-gold-700 opacity-20 group-hover:opacity-40 transition-opacity duration-500 rounded-3xl"></div>
 
                         <div className="bg-[#111] hover:bg-[#151515] transition-colors duration-500 rounded-[22px] p-10 h-full flex flex-col relative z-10">
-                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gold-400 to-gold-600 text-black-900 px-6 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-lg">
+                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-gold-400 to-gold-600 text-black-900 px-6 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-widest shadow-lg whitespace-nowrap">
                                 Inmersión Total
                             </div>
                             <div className="mb-8 mt-4">
@@ -144,7 +144,7 @@ export default function Personalizados() {
                             <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20quiero%20postular%20al%20Premium%20Foundation%20Pack."
                                 target="_blank" rel="noopener noreferrer"
                                 className="w-full text-center bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black-900 font-bold py-4 rounded-xl transition-all shadow-xl hover:shadow-gold-500/30 text-lg block">
-                                Postular al Pack Premium
+                                Consultar Disponibilidad
                             </a>
                         </div>
                     </div>
