@@ -65,14 +65,14 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Dropdown Grupales */}
+                            {/* Dropdown Programas */}
                             <div className="relative group">
                                 <button className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-1 py-4">
-                                    Grupales <i className="fas fa-chevron-down text-[10px] ml-1"></i>
+                                    Programas <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/juniors" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Programa Juniors</Link>
-                                    <Link href="/programas/after-office" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Programa After Office</Link>
+                                    <Link href="/programas/juniors" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">JUNIOR COACHING</Link>
+                                    <Link href="/programas/after-office" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">AFTER OFFICE TENNIS</Link>
                                 </div>
                             </div>
 
@@ -102,9 +102,9 @@ export default function Home() {
                             </div>
 
                             <div className="py-2 text-left border-t border-white/5">
-                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Programas Grupales</span>
-                                <Link href="/programas/juniors" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa Juniors</Link>
-                                <Link href="/programas/after-office" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa After Office</Link>
+                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Programas</span>
+                                <Link href="/programas/juniors" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">JUNIOR COACHING</Link>
+                                <Link href="/programas/after-office" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">AFTER OFFICE TENNIS</Link>
                             </div>
 
                             <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
@@ -316,7 +316,7 @@ export default function Home() {
                                     onClick={() => setActiveTab('grupal')}
                                     className={`relative z-10 px-6 sm:px-10 py-3.5 rounded-full text-sm font-bold transition-all duration-300 ${activeTab === 'grupal' ? 'bg-gold-500 text-black-900 shadow-[0_0_20px_rgba(212,175,55,0.4)]' : 'text-gray-400 hover:text-white hover:bg-white/5'}`}
                                 >
-                                    Programas Grupales
+                                    Programas
                                 </button>
                             </div>
                         </div>
@@ -428,7 +428,7 @@ export default function Home() {
                             </div>
                         )}
 
-                        {/* TAB B: Grupales */}
+                        {/* TAB B: Programas */}
                         {activeTab === 'grupal' && (
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up max-w-4xl mx-auto">
 
@@ -438,7 +438,7 @@ export default function Home() {
                                         <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
                                             Formativo
                                         </span>
-                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Junior Coaching</h4>
+                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">JUNIOR COACHING</h4>
                                         <p className="text-gray-400 text-lg">Escuela de Formación Integral.</p>
                                     </div>
                                     <div className="h-48 w-full rounded-2xl bg-black-900 mb-8 overflow-hidden relative group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-shadow">
@@ -475,7 +475,7 @@ export default function Home() {
                                         <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
                                             Adultos
                                         </span>
-                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">After Office Coaching</h4>
+                                        <h4 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">AFTER OFFICE TENNIS</h4>
                                         <p className="text-gray-400 text-lg">Entrenamiento de Alto Nivel para Adultos.</p>
                                     </div>
                                     <div className="h-48 w-full rounded-2xl bg-black-900 mb-8 overflow-hidden relative group-hover:shadow-[0_0_15px_rgba(212,175,55,0.2)] transition-shadow">
