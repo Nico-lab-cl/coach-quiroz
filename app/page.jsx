@@ -59,9 +59,9 @@ export default function Home() {
                                     Personalizados <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <a href="#services" onClick={() => setActiveTab('personal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Start Tenis</a>
-                                    <a href="#services" onClick={() => setActiveTab('personal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Performance Pack</a>
-                                    <a href="#services" onClick={() => setActiveTab('personal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Foundation Pack</a>
+                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Start Tenis</Link>
+                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Performance Pack</Link>
+                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Foundation Pack</Link>
                                 </div>
                             </div>
 
@@ -71,8 +71,8 @@ export default function Home() {
                                     Grupales <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <a href="#services" onClick={() => setActiveTab('grupal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Programa Juniors</a>
-                                    <a href="#services" onClick={() => setActiveTab('grupal')} className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Programa After Office</a>
+                                    <Link href="/programas/juniors" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Programa Juniors</Link>
+                                    <Link href="/programas/after-office" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Programa After Office</Link>
                                 </div>
                             </div>
 
@@ -96,15 +96,15 @@ export default function Home() {
 
                             <div className="py-2 text-left">
                                 <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Personalizados</span>
-                                <a href="#services" onClick={() => { setActiveTab('personal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Start Tenis</a>
-                                <a href="#services" onClick={() => { setActiveTab('personal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Performance Pack</a>
-                                <a href="#services" onClick={() => { setActiveTab('personal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Foundation Pack</a>
+                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Start Tenis</Link>
+                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Performance Pack</Link>
+                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Foundation Pack</Link>
                             </div>
 
                             <div className="py-2 text-left border-t border-white/5">
                                 <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Programas Grupales</span>
-                                <a href="#services" onClick={() => { setActiveTab('grupal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa Juniors</a>
-                                <a href="#services" onClick={() => { setActiveTab('grupal'); setMenuOpen(false); }} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa After Office</a>
+                                <Link href="/programas/juniors" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa Juniors</Link>
+                                <Link href="/programas/after-office" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Programa After Office</Link>
                             </div>
 
                             <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
@@ -351,11 +351,10 @@ export default function Home() {
                                             <span className="leading-relaxed">Enfoque en fundamentos técnicos y coordinación</span>
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20el%20plan%20START%20TENIS%20para%20empezar%20desde%20cero."
-                                        target="_blank" rel="noopener noreferrer"
+                                    <Link href="/programas/personalizados"
                                         className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
-                                        Comenzar en el Tenis
-                                    </a>
+                                        Ver Detalles y Reservar
+                                    </Link>
                                 </div>
 
                                 {/* Card 1: Performance Pack */}
@@ -381,11 +380,10 @@ export default function Home() {
                                             <span className="leading-relaxed">Estructuración de mentalidad competitiva</span>
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20consultar%20disponibilidad%20para%20el%20Performance%20Pack."
-                                        target="_blank" rel="noopener noreferrer"
+                                    <Link href="/programas/personalizados"
                                         className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
-                                        Consultar disponibilidad
-                                    </a>
+                                        Ver Detalles y Reservar
+                                    </Link>
                                 </div>
 
                                 {/* Card 2: Foundation Pack (Premium) */}
@@ -421,11 +419,10 @@ export default function Home() {
                                                 <span className="leading-relaxed">Feedback post-partido</span>
                                             </li>
                                         </ul>
-                                        <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20postular%20al%20Foundation%20Pack."
-                                            target="_blank" rel="noopener noreferrer"
+                                        <Link href="/programas/personalizados"
                                             className="w-full text-center bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-black-900 font-bold py-4 rounded-xl transition-all shadow-xl hover:shadow-gold-500/30 text-lg block">
-                                            Postular al Foundation Pack
-                                        </a>
+                                            Ver Detalles y Reservar
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -466,11 +463,10 @@ export default function Home() {
                                             <span className="leading-relaxed">8 hrs mensuales</span>
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20solicitar%20un%20cupo%20para%20el%20Junior%20Coaching."
-                                        target="_blank" rel="noopener noreferrer"
+                                    <Link href="/programas/juniors"
                                         className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
-                                        Solicitar cupo Junior
-                                    </a>
+                                        Ver Detalles y Reservar
+                                    </Link>
                                 </div>
 
                                 {/* Card 4: After Office Coaching */}
@@ -504,11 +500,10 @@ export default function Home() {
                                             <span className="leading-relaxed">12 hrs mensuales</span>
                                         </li>
                                     </ul>
-                                    <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20solicitar%20un%20cupo%20para%20el%20After%20Office%20Coaching."
-                                        target="_blank" rel="noopener noreferrer"
+                                    <Link href="/programas/after-office"
                                         className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
-                                        Solicitar cupo After Office
-                                    </a>
+                                        Ver Detalles y Reservar
+                                    </Link>
                                 </div>
                             </div>
                         )}
