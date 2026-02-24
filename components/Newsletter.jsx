@@ -73,7 +73,7 @@ export default function Newsletter() {
 
                 {/* Heading */}
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 tracking-tight leading-tight">
-                    <span className="text-white">Mantente un paso</span><br />
+                    <span className="text-white">Ve un paso</span><br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-500">
                         adelante.
                     </span>
