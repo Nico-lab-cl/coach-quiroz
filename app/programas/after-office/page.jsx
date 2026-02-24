@@ -130,16 +130,6 @@ export default function AfterOfficeCoaching() {
                                     <p className="text-gray-500 font-light tracking-wide">Viña del Mar</p>
                                 </div>
                             </div>
-                            {/* Card 2 */}
-                            <div className="bg-[#0a0a0a]/80 backdrop-blur-md border border-white/5 p-6 rounded-2xl flex items-center gap-6 hover:border-rose-500/50 hover:bg-rose-950/20 transition-all hover:scale-[1.02] cursor-default group">
-                                <div className="w-16 h-16 bg-rose-500/10 rounded-full flex items-center justify-center text-rose-500 text-2xl group-hover:bg-rose-500 group-hover:text-black group-hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] transition-all shrink-0">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-1">Club El Salto</h4>
-                                    <p className="text-gray-500 font-light tracking-wide">Viña del Mar</p>
-                                </div>
-                            </div>
                             {/* Card 3 */}
                             <div className="bg-[#0a0a0a]/80 backdrop-blur-md border border-white/5 p-6 rounded-2xl flex items-center gap-6 hover:border-rose-500/50 hover:bg-rose-950/20 transition-all hover:scale-[1.02] cursor-default group">
                                 <div className="w-16 h-16 bg-rose-500/10 rounded-full flex items-center justify-center text-rose-500 text-2xl group-hover:bg-rose-500 group-hover:text-black group-hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] transition-all shrink-0">

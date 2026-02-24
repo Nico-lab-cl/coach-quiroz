@@ -198,19 +198,6 @@ export default function Personalizados() {
                                     </p>
                                 </div>
                             </div>
-                            {/* Card 2 */}
-                            <div className="bg-[#050505] backdrop-blur-md border border-white/5 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-gold-500/40 hover:bg-gold-900/10 transition-all duration-500 hover:-translate-y-1 cursor-default group relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                <div className="w-16 h-16 bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20 rounded-full flex items-center justify-center text-gold-500 text-2xl group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all shrink-0">
-                                    <i className="fas fa-gem"></i>
-                                </div>
-                                <div className="relative z-10">
-                                    <h4 className="text-xl font-bold text-white mb-1 uppercase tracking-wider text-sm">Club El Salto</h4>
-                                    <p className="text-gray-500 font-light tracking-wide text-sm flex items-center gap-2">
-                                        <i className="fas fa-map-marker-alt text-gold-500/50"></i> Viña del Mar
-                                    </p>
-                                </div>
-                            </div>
                             {/* Card 3 */}
                             <div className="bg-[#050505] backdrop-blur-md border border-white/5 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-gold-500/40 hover:bg-gold-900/10 transition-all duration-500 hover:-translate-y-1 cursor-default group relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

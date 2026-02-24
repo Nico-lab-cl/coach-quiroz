@@ -26,7 +26,6 @@ const METHODOLOGY = [
 
 const LOCATIONS = [
     { name: 'Club El Refugio', place: 'Viña del Mar' },
-    { name: 'Club El Salto', place: 'Viña del Mar' },
     { name: 'Club de Tenis Con Con', place: 'Con Con' },
 ];
 

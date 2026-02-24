@@ -172,16 +172,6 @@ export default function JuniorCoaching() {
                                     <p className="text-blue-200/60 font-medium">Viña del Mar</p>
                                 </div>
                             </div>
-                            {/* Card 2 */}
-                            <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-blue-400 hover:bg-blue-900/20 transition-all hover:scale-[1.02] cursor-default group">
-                                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all shrink-0">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-1">Club El Salto</h4>
-                                    <p className="text-blue-200/60 font-medium">Viña del Mar</p>
-                                </div>
-                            </div>
                             {/* Card 3 */}
                             <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all hover:scale-[1.02] cursor-default group">
                                 <div className="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center text-cyan-400 text-2xl group-hover:bg-cyan-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all shrink-0">
