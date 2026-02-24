@@ -61,7 +61,7 @@ export default function Newsletter() {
                     </h2>
 
                     <p className="text-gray-400 mb-8 max-w-lg mx-auto leading-relaxed font-light">
-                        Suscríbete a nuestro boletín para recibir tips tácticos, acceso prioritario a clínicas y noticias del mundo del alto rendimiento.
+                        Suscríbete a nuestro boletín para recibir tips tácticos y noticias del mundo del alto rendimiento.
                     </p>
 
                     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto justify-center">
