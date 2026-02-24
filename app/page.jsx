@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const GALLERY = [
     { src: '/images/gallery-01.jpg', alt: 'Entrenamiento' },
@@ -44,10 +45,10 @@ export default function Home() {
             <nav className="fixed w-full z-50 transition-all duration-300 bg-glass border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
-                        <div className="flex-shrink-0 flex items-center">
-                            <img className="h-12 w-auto rounded-full border border-gold-500/30" src="/images/logo.jpeg" alt="Logo" />
-                            <span className="ml-3 text-xl font-bold tracking-tight">BY <span className="text-gold-500">COACHQUIROZ</span></span>
-                        </div>
+                        <Link href="/login" className="flex-shrink-0 flex items-center group cursor-pointer text-white">
+                            <img className="h-12 w-auto rounded-full border border-gold-500/30 group-hover:border-gold-500 transition-colors duration-300" src="/images/logo.jpeg" alt="Logo" />
+                            <span className="ml-3 text-xl font-bold tracking-tight group-hover:text-gold-500 transition-colors duration-300">BY <span className="text-gold-500 group-hover:text-white transition-colors duration-300">COACHQUIROZ</span></span>
+                        </Link>
                         <div className="hidden md:flex items-center space-x-8">
                             <a href="#about" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Sobre mí</a>
                             <a href="#methodology" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Metodología</a>
