@@ -513,23 +513,71 @@ export default function Home() {
             </section>
 
             {/* ── TESTIMONIALS ── */}
-            <section className="py-20 bg-black-800 border-t border-white/5">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-2xl font-bold mb-10">Lo que dicen mis alumnos</h2>
-                    <div className="max-w-2xl mx-auto bg-black-900 p-8 rounded-2xl relative">
-                        <i className="fas fa-quote-left text-gold-500/20 text-6xl absolute top-4 left-4"></i>
-                        <p className="text-gray-300 text-lg italic relative z-10 mb-6">
-                            &ldquo;Entrenar con Andrés cambió mi forma de ver la cancha. Su análisis técnico es otro nivel y la intensidad de los entrenamientos me preparó para competir en serio.&rdquo;
-                        </p>
-                        <div className="flex items-center justify-center gap-4">
-                            <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
-                                <i className="fas fa-user text-gray-400"></i>
+            <section className="py-24 bg-black-800 border-t border-white/5 relative overflow-hidden">
+                {/* Ambient lights */}
+                <div className="absolute inset-0 pointer-events-none">
+                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-[120px]"></div>
+                    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px]"></div>
+                </div>
+
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    {/* Header */}
+                    <div className="text-center mb-16">
+                        <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-[10px] font-black tracking-[0.3em] uppercase px-4 py-1.5 rounded-full mb-4">
+                            Testimonios Reales
+                        </span>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-white">Lo que dicen mis <span className="text-gold-500">alumnos</span></h2>
+                    </div>
+
+                    {/* Two-column cards grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                        {/* Testimonial 1 – Alexander Cataldo */}
+                        <div className="bg-black-900/80 backdrop-blur-md border border-white/5 hover:border-gold-500/20 rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 shadow-xl group">
+                            <div>
+                                <i className="fas fa-quote-left text-gold-500/20 text-5xl mb-6 block"></i>
+                                <p className="text-gray-300 text-base sm:text-lg italic leading-relaxed">
+                                    &ldquo;Entrenar con Andrés en Alemania fue una gran experiencia. Aprendí muchísimo en pocas semanas y destacó su profesionalismo y experiencia como jugador de alto nivel. 100% recomendado.&rdquo;
+                                </p>
                             </div>
-                            <div className="text-left">
-                                <p className="text-white font-bold">Alumno Satisfecho</p>
-                                <p className="text-gold-500 text-sm">Jugador Competitivo</p>
+                            <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
+                                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-gold-500/30 group-hover:border-gold-500 transition-colors shrink-0">
+                                    <img
+                                        src="/images/testimonial-alexander.png"
+                                        alt="Alexander Cataldo"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <div>
+                                    <p className="text-white font-bold">Alexander Cataldo</p>
+                                    <p className="text-gold-500 text-sm">Tenista Chileno · Tenis en Silla de Ruedas</p>
+                                </div>
                             </div>
                         </div>
+
+                        {/* Testimonial 2 – Daniel Rojas */}
+                        <div className="bg-black-900/80 backdrop-blur-md border border-white/5 hover:border-gold-500/20 rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 shadow-xl group">
+                            <div>
+                                <i className="fas fa-quote-left text-gold-500/20 text-5xl mb-6 block"></i>
+                                <p className="text-gray-300 text-base sm:text-lg italic leading-relaxed">
+                                    &ldquo;Durante los últimos 4 años, Andrés ha sido un apoyo fundamental en mi crecimiento profesional y personal. Gracias a su guía y respaldo constante, pude proyectar mi carrera a nivel internacional en Alemania. Su trabajo y experiencia son más que recomendados.&rdquo;
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
+                                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-gold-500/30 group-hover:border-gold-500 transition-colors shrink-0">
+                                    <img
+                                        src="/images/testimonial-daniel.png"
+                                        alt="Daniel Rojas"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <div>
+                                    <p className="text-white font-bold">Daniel Rojas</p>
+                                    <p className="text-gold-500 text-sm">Entrenador de Tenis · Chile</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
