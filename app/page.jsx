@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Newsletter from '../components/Newsletter';
 
 const GALLERY = [
     { src: '/images/gallery-01.jpg', alt: 'Entrenamiento' },
@@ -58,9 +59,9 @@ export default function Home() {
                                     Personalizados <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Start Tenis</Link>
-                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">Performance Pack</Link>
-                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">Foundation Pack</Link>
+                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">START TENIS</Link>
+                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">PERFORMANCE PACK</Link>
+                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">FOUNDATION PACK</Link>
                                 </div>
                             </div>
 
@@ -95,9 +96,9 @@ export default function Home() {
 
                             <div className="py-2 text-left">
                                 <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Personalizados</span>
-                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Start Tenis</Link>
-                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Performance Pack</Link>
-                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">Foundation Pack</Link>
+                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">START TENIS</Link>
+                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">PERFORMANCE PACK</Link>
+                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">FOUNDATION PACK</Link>
                             </div>
 
                             <div className="py-2 text-left border-t border-white/5">
@@ -533,6 +534,9 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* ── NEWSLETTER ── */}
+            <Newsletter />
+
             {/* ── FOOTER ── */}
             <footer className="bg-black-900 border-t border-white/10 pt-16 pb-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -558,12 +562,6 @@ export default function Home() {
                     </div>
                 </div>
             </footer>
-
-            {/* ── WHATSAPP FLOATING ── */}
-            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 md:hidden z-50 bg-green-500 text-white p-4 rounded-full shadow-[0_0_20px_rgba(0,255,0,0.3)] animate-bounce hover:scale-110 transition-transform">
-                <i className="fab fa-whatsapp text-3xl"></i>
-            </a>
 
             {/* ── IMAGE MODAL ── */}
             {modalSrc && (
