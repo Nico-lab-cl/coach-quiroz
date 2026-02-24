@@ -1,5 +1,6 @@
 import { Outfit } from 'next/font/google';
 import './globals.css';
+import CookieConsent from '../components/CookieConsent';
 
 const outfit = Outfit({
     subsets: ['latin'],
@@ -65,6 +66,7 @@ gtag('config', 'G-0XVWQ0THPW');
                 </noscript>
                 {/* End Google Tag Manager (noscript) */}
                 {children}
+                <CookieConsent />
             </body>
         </html>
     );

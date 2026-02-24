@@ -546,6 +546,7 @@ export default function Home() {
                         <div className="mb-6 md:mb-0 text-center md:text-left">
                             <span className="text-xl font-bold tracking-tight text-white">BY <span className="text-gold-500">COACHQUIROZ</span></span>
                             <p className="text-gray-500 text-sm mt-2">Elevando el nivel del tenis en Chile.</p>
+                            <a href="mailto:contacto@bycoachquiroz.cl" className="text-gold-500 hover:text-white text-sm transition-colors mt-1 inline-block">contacto@bycoachquiroz.cl</a>
                         </div>
                         <div className="flex gap-6">
                             <a href="https://www.instagram.com/by.coachquiroz/" target="_blank" rel="noopener noreferrer"
