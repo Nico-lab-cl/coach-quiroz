@@ -301,7 +301,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-2">Planes y Programas</h2>
-                        <h3 className="text-4xl sm:text-5xl font-bold mb-10">Transforma tu tenis.<br /><span className="text-gold-500">Entrena con propósito.</span></h3>
+                        <h3 className="text-4xl sm:text-5xl font-bold mb-10">Transforma tu tenis<br /><span className="text-gold-500">Entrena con propósito</span></h3>
 
                         {/* Tabs Navigation */}
                         <div className="flex justify-center mb-4">

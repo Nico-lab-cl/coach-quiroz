@@ -62,8 +62,8 @@ export default function AfterOfficeCoaching() {
                             </div>
 
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light mb-8 leading-tight tracking-tight">
-                                Tu cancha.<br />
-                                <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">Tus reglas.</span>
+                                Tu cancha<br />
+                                <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">Tus reglas</span>
                             </h1>
 
                             <p className="text-xl text-gray-400 mb-12 leading-relaxed font-light">
