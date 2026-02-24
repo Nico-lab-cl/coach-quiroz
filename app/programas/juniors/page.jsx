@@ -99,6 +99,50 @@ export default function JuniorCoaching() {
                     </div>
                 </div>
             </section>
+
+            {/* Visual Gallery Section */}
+            <section className="py-20 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <span className="inline-block border border-blue-400/50 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-4">
+                            En Acción
+                        </span>
+                        <h2 className="text-4xl font-black mb-4 tracking-tight">El Team <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">en Cancha</span></h2>
+                        <p className="text-blue-100/60 max-w-2xl mx-auto">Un vistazo a nuestras jornadas de entrenamiento lleno de energía y aprendizaje.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="rounded-3xl overflow-hidden group relative h-80 lg:col-span-2">
+                            <img src="/images/training-kids.jpg" alt="Entrenamiento de niños" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                            <div className="absolute bottom-6 left-6">
+                                <h3 className="text-xl font-bold text-white">Práctica Técnica</h3>
+                            </div>
+                        </div>
+                        <div className="rounded-3xl overflow-hidden group relative h-80">
+                            <img src="/images/gallery-10.jpg" alt="Tenis Juniors" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                            <div className="absolute bottom-6 left-6">
+                                <h3 className="text-xl font-bold text-white">Motivación</h3>
+                            </div>
+                        </div>
+                        <div className="rounded-3xl overflow-hidden group relative h-80">
+                            <img src="/images/pack-juniors.jpg" alt="Junior Team" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                            <div className="absolute bottom-6 left-6">
+                                <h3 className="text-xl font-bold text-white">Trabajo en Equipo</h3>
+                            </div>
+                        </div>
+                        <div className="rounded-3xl overflow-hidden group relative h-80 lg:col-span-2">
+                            <img src="/images/gallery-02.jpg" alt="Juego en cancha" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 object-center grayscale-[30%] group-hover:grayscale-0" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                            <div className="absolute bottom-6 left-6">
+                                <h3 className="text-xl font-bold text-white">Diversión Garantizada</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
