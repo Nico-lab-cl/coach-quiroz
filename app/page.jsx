@@ -9,7 +9,6 @@ const GALLERY = [
     { src: '/images/gallery-02.jpg', alt: 'Tenis en acción' },
     { src: '/images/gallery-03.jpg', alt: 'Clase de tenis' },
     { src: '/images/gallery-04.jpg', alt: 'Coach Quiroz' },
-    { src: '/images/gallery-12.jpg', alt: 'Entrenamiento personalizado' },
     { src: '/images/gallery-06.jpg', alt: 'Tenis Chile' },
     { src: '/images/gallery-07.jpg', alt: 'Coach Andrés' },
     { src: '/images/gallery-08.jpg', alt: 'Alto Rendimiento' },
