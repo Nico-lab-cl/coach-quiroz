@@ -1,203 +1,230 @@
-'use client';
-
 import Link from 'next/link';
 
-export default function JuniorCoaching() {
+export const metadata = {
+    title: 'Junior Coaching | By Coach Quiroz',
+    description: 'Junior Coaching es un programa de formación integral dirigido a niños y jóvenes, enfocado en el desarrollo técnico, físico y mental dentro del tenis.',
+};
+
+export default function JuniorCoachingPage() {
     return (
-        <div className="min-h-screen bg-[#0f172a] pb-20 selection:bg-blue-500 selection:text-white">
-            {/* Dynamic Navbar */}
-            <nav className="fixed w-full z-50 transition-all duration-300 bg-[#0f172a]/80 backdrop-blur-md border-b border-blue-500/20">
+        <div className="min-h-screen bg-black-900 pb-20 selection:bg-gold-500 selection:text-black-900 font-sans">
+            {/* Dynamic Navbar / Back Button */}
+            <nav className="fixed w-full z-50 transition-all duration-300 bg-black-900/80 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         <Link href="/" className="flex-shrink-0 flex items-center group text-white">
-                            <i className="fas fa-arrow-left mr-3 text-blue-400 group-hover:-translate-x-1 transition-transform"></i>
-                            <span className="text-sm font-bold tracking-widest uppercase">Volver al Inicio</span>
+                            <i className="fas fa-arrow-left mr-3 text-gold-500 group-hover:-translate-x-1 transition-transform"></i>
+                            <span className="text-sm font-bold tracking-widest uppercase hover:text-gold-500 transition-colors">Volver al Inicio</span>
                         </Link>
                         <div className="flex-shrink-0 flex items-center">
-                            <img className="h-10 w-auto rounded-full border-2 border-blue-400" src="/images/logo.jpeg" alt="Logo" />
+                            <img className="h-10 w-auto rounded-full border border-gold-500/30" src="/images/logo.jpeg" alt="Logo By Coach Quiroz" />
                         </div>
                     </div>
                 </div>
             </nav>
 
-            {/* Energetic Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            {/* Hero Section */}
+            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
                 {/* Background Image Banner */}
                 <div className="absolute inset-0 z-0">
-                    <img src="/images/training-kids.jpg" alt="Fondo Juniors" className="w-full h-full object-cover opacity-[0.15] grayscale" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a]/90 via-[#0f172a]/80 to-[#0b1120]"></div>
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full blur-[150px] mix-blend-screen animate-pulse opacity-50"></div>
+                    <img src="/images/junior-hero.png" alt="Junior Coaching" className="w-full h-full object-cover object-center opacity-40 transition-transform duration-[10s] hover:scale-105" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black-900 via-black-900/70 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-black-900/90 via-black-900/50 to-transparent w-full md:w-3/4"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="order-2 lg:order-1">
-                            <div className="relative group">
-                                <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl blur-lg transition-all opacity-50 group-hover:opacity-100 group-hover:duration-200"></div>
-                                <img src="/images/training-kids.jpg" alt="Junior Coaching" className="relative rounded-2xl shadow-2xl w-full h-auto object-cover border-2 border-white/10 grayscale-[20%] hover:grayscale-0 transition-all duration-500" />
-                            </div>
-                        </div>
-                        <div className="order-1 lg:order-2">
-                            <span className="inline-flex items-center gap-2 border border-blue-400/50 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-widest text-[10px] sm:text-xs uppercase px-4 py-1.5 rounded-full mb-6">
-                                <i className="fas fa-bolt text-yellow-500"></i> Energía y Formación
-                            </span>
-                            <h1 className="text-5xl sm:text-7xl font-black mb-6 tracking-tight leading-tight">
-                                TEAM <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">JUNIORS</span>
-                            </h1>
-                            <p className="text-xl text-blue-100/80 mb-8 leading-relaxed font-medium">
-                                Forma el carácter de tu hijo(a) a través del deporte. Metodología basada en la diversión, la disciplina y el trabajo en equipo con la guía experta de Coach Quiroz.
-                            </p>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                    <div className="max-w-3xl">
+                        <span className="inline-flex items-center gap-2 border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs sm:text-sm font-bold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6 animate-fade-in-up">
+                            <i className="fas fa-star"></i> Formación Integral
+                        </span>
 
-                            <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20me%20interesa%20inscribir%20a%20mi%20hijo/a%20en%20el%20Team%20Juniors."
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(59,130,246,0.3)] w-full sm:w-auto">
-                                    ¡Inscribir ahora! <i className="fas fa-arrow-right ml-2 opacity-70"></i>
-                                </a>
-                            </div>
+                        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-6 tracking-tight leading-none text-white drop-shadow-lg">
+                            JUNIOR <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-gold-500 to-yellow-200">COACHING</span>
+                        </h1>
+
+                        <h2 className="text-2xl sm:text-3xl font-light text-white mb-6">
+                            Metodología de entrenamiento <span className="font-semibold text-gold-500">avanzado para niños</span>
+                        </h2>
+
+                        <p className="text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-2xl">
+                            Junior Coaching es un programa de formación integral dirigido a niños y jóvenes, enfocado en el desarrollo técnico, físico y mental dentro del tenis.
+                        </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/56932732917?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20Junior%20Coaching"
+                                target="_blank" rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center bg-gradient-to-r from-gold-400 to-gold-600 hover:from-gold-300 hover:to-gold-500 text-black-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(212,175,55,0.3)] w-full sm:w-auto group">
+                                Contáctanos <i className="fab fa-whatsapp ml-2 text-xl group-hover:scale-110 transition-transform"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                {/* Scroll Down Indicator */}
+                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block z-20">
+                    <a href="#objetivo" className="text-white/40 hover:text-gold-500 transition-colors">
+                        <i className="fas fa-chevron-down text-3xl"></i>
+                    </a>
+                </div>
             </section>
 
-            {/* Core Pillars Section */}
-            <section className="py-20 bg-[#0b1120] relative border-y border-blue-500/10">
+            {/* Objective Section */}
+            <section id="objetivo" className="py-24 relative border-t border-white/5 bg-black-800">
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gold-500/5 to-transparent pointer-events-none"></div>
+
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                    <div className="w-20 h-20 mx-auto bg-black-900 border border-gold-500/30 rounded-2xl flex items-center justify-center shadow-[0_0_30px_rgba(212,175,55,0.15)] mb-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <i className="fas fa-bullseye text-4xl text-gold-500"></i>
+                    </div>
+
+                    <h2 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-4">El Propósito</h2>
+                    <h3 className="text-3xl sm:text-4xl font-bold text-white mb-8">Objetivo del Programa</h3>
+
+                    <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed font-light">
+                        El objetivo principal del programa es construir <strong className="text-white font-semibold">bases sólidas</strong> desde etapas tempranas, priorizando la <strong className="text-gold-500 font-semibold">correcta ejecución técnica</strong>, la comprensión táctica progresiva y la formación de <strong className="text-white font-semibold">hábitos deportivos saludables</strong>.
+                    </p>
+                </div>
+            </section>
+
+            {/* Focus Section (Grid) */}
+            <section className="py-24 bg-black-900 relative">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold mb-4">¿Por qué elegir nuestro Team?</h2>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto rounded-full"></div>
+                        <h2 className="text-3xl sm:text-5xl font-bold text-white mb-6">El enfoque del <span className="text-gold-500">Junior Coaching</span></h2>
+                        <div className="w-24 h-1 bg-gradient-to-r from-gold-400 to-gold-600 mx-auto rounded-full mb-6"></div>
+                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                            Nuestro programa se basa en pilares fundamentales diseñados para sostener crecimiento anual y generar continuidad en el desarrollo del jugador.
+                        </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Pillar 1 */}
-                        <div className="bg-[#1e293b]/50 border border-slate-700/50 p-8 rounded-3xl hover:bg-blue-900/20 transition-colors duration-300">
-                            <div className="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center text-2xl mb-6 transform -rotate-6">
-                                <i className="fas fa-gamepad"></i>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Focus 1 */}
+                        <div className="bg-black-800/50 backdrop-blur-sm border border-white/5 p-8 rounded-3xl hover:border-gold-500/30 hover:bg-black-800 transition-all duration-300 group hover:-translate-y-2">
+                            <div className="w-14 h-14 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                                <i className="fas fa-layer-group"></i>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Aprender Jugando</h3>
-                            <p className="text-slate-400">Juegos y dinámicas en cancha diseñadas para mejorar la coordinación sin perder la diversión.</p>
+                            <h3 className="text-xl font-bold text-white mb-3">Formación Técnica Progresiva</h3>
+                            <p className="text-gray-400 leading-relaxed">Paso a paso, construimos una técnica impecable garantizando una base duradera para el futuro.</p>
                         </div>
 
-                        {/* Pillar 2 */}
-                        <div className="bg-[#1e293b]/50 border border-slate-700/50 p-8 rounded-3xl hover:bg-blue-900/20 transition-colors duration-300">
-                            <div className="w-14 h-14 bg-cyan-500/20 text-cyan-400 rounded-2xl flex items-center justify-center text-2xl mb-6 transform rotate-3">
-                                <i className="fas fa-shield-alt"></i>
+                        {/* Focus 2 */}
+                        <div className="bg-black-800/50 backdrop-blur-sm border border-white/5 p-8 rounded-3xl hover:border-gold-500/30 hover:bg-black-800 transition-all duration-300 group hover:-translate-y-2">
+                            <div className="w-14 h-14 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                                <i className="fas fa-running"></i>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Red de Apoyo</h3>
-                            <p className="text-slate-400">Grupos reducidos con doble supervisión técnica garantizan que nadie se quede atrás.</p>
+                            <h3 className="text-xl font-bold text-white mb-3">Coordinación y Motricidad</h3>
+                            <p className="text-gray-400 leading-relaxed">Ejercicios específicos orientados al desarrollo integral de las capacidades físicas del niño.</p>
                         </div>
 
-                        {/* Pillar 3 */}
-                        <div className="bg-[#1e293b]/50 border border-slate-700/50 p-8 rounded-3xl hover:bg-blue-900/20 transition-colors duration-300 relative overflow-hidden group">
-                            <div className="absolute top-0 right-0 bg-yellow-400 text-black px-3 py-1 rounded-bl-2xl text-xs font-bold z-10">Nuevo</div>
-                            <div className="w-14 h-14 bg-yellow-500/20 text-yellow-400 rounded-2xl flex items-center justify-center text-2xl mb-6 transform -rotate-3">
-                                <i className="fas fa-medal"></i>
+                        {/* Focus 3 */}
+                        <div className="bg-black-800/50 backdrop-blur-sm border border-white/5 p-8 rounded-3xl hover:border-gold-500/30 hover:bg-black-800 transition-all duration-300 group hover:-translate-y-2">
+                            <div className="w-14 h-14 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                                <i className="fas fa-exchange-alt"></i>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">Valores en Cancha</h3>
-                            <p className="text-slate-400">Fomentamos el respeto, la resiliencia y el manejo de la frustración desde el primer día.</p>
+                            <h3 className="text-xl font-bold text-white mb-3">Trabajo Estructurado</h3>
+                            <p className="text-gray-400 leading-relaxed">Labor enfocada en ambos lados de la cancha, con un límite ideal de 6 jugadores por lado para máxima atención.</p>
                         </div>
-                    </div>
-                </div>
-            </section>
 
-            {/* Visual Gallery Section */}
-            <section className="py-20 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <span className="inline-block border border-blue-400/50 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-4">
-                            En Acción
-                        </span>
-                        <h2 className="text-4xl font-black mb-4 tracking-tight">El Team <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">en Cancha</span></h2>
-                        <p className="text-blue-100/60 max-w-2xl mx-auto">Un vistazo a nuestras jornadas de entrenamiento lleno de energía y aprendizaje.</p>
-                    </div>
+                        {/* Focus 4 */}
+                        <div className="bg-black-800/50 backdrop-blur-sm border border-white/5 p-8 rounded-3xl hover:border-gold-500/30 hover:bg-black-800 transition-all duration-300 group hover:-translate-y-2">
+                            <div className="w-14 h-14 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                                <i className="fas fa-user-friends"></i>
+                            </div>
+                            <h3 className="text-xl font-bold text-white mb-3">Doble Supervisión</h3>
+                            <p className="text-gray-400 leading-relaxed">Supervisión constante mediante 2 entrenadores por sesión, asegurando que cada detalle sea corregido a tiempo.</p>
+                        </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="rounded-3xl overflow-hidden group relative h-80 lg:col-span-2">
-                            <img src="/images/training-kids.jpg" alt="Entrenamiento de niños" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
-                            <div className="absolute bottom-6 left-6">
-                                <h3 className="text-xl font-bold text-white">Práctica Técnica</h3>
+                        {/* Focus 5 */}
+                        <div className="bg-black-800/50 backdrop-blur-sm border border-white/5 p-8 rounded-3xl hover:border-gold-500/30 hover:bg-black-800 transition-all duration-300 group hover:-translate-y-2">
+                            <div className="w-14 h-14 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                                <i className="fas fa-handshake"></i>
                             </div>
+                            <h3 className="text-xl font-bold text-white mb-3">Valores y Disciplina</h3>
+                            <p className="text-gray-400 leading-relaxed">Fomentamos fuertemente el desarrollo de la disciplina, el compromiso y una sana cultura deportiva.</p>
                         </div>
-                        <div className="rounded-3xl overflow-hidden group relative h-80">
-                            <img src="/images/gallery-10.jpg" alt="Tenis Juniors" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
-                            <div className="absolute bottom-6 left-6">
-                                <h3 className="text-xl font-bold text-white">Motivación</h3>
+
+                        {/* Focus 6 */}
+                        <div className="bg-black-800/50 backdrop-blur-sm border border-white/5 p-8 rounded-3xl hover:border-gold-500/30 hover:bg-black-800 transition-all duration-300 group relative overflow-hidden hover:-translate-y-2">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/5 rounded-bl-full pointer-events-none group-hover:bg-gold-500/10 transition-colors"></div>
+                            <div className="w-14 h-14 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                                <i className="fas fa-road"></i>
                             </div>
-                        </div>
-                        <div className="rounded-3xl overflow-hidden group relative h-80">
-                            <img src="/images/pack-juniors.jpg" alt="Junior Team" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[30%] group-hover:grayscale-0" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
-                            <div className="absolute bottom-6 left-6">
-                                <h3 className="text-xl font-bold text-white">Trabajo en Equipo</h3>
-                            </div>
-                        </div>
-                        <div className="rounded-3xl overflow-hidden group relative h-80 lg:col-span-2">
-                            <img src="/images/gallery-02.jpg" alt="Juego en cancha" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 object-center grayscale-[30%] group-hover:grayscale-0" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
-                            <div className="absolute bottom-6 left-6">
-                                <h3 className="text-xl font-bold text-white">Diversión Garantizada</h3>
-                            </div>
+                            <h3 className="text-xl font-bold text-white mb-3">Enfoque en el Proceso</h3>
+                            <p className="text-gray-400 leading-relaxed">Valoramos el aprendizaje y el avance sostenido a largo plazo antes que un resultado inmediato en el marcador.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Locations Section */}
-            <section className="py-20 relative bg-[#0f172a] border-t border-blue-500/10 overflow-hidden">
-                <div className="absolute inset-0 z-0">
-                    <img src="/images/gallery-06.jpg" className="w-full h-full object-cover opacity-5" alt="Fondo Mapa" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-[#0f172a]"></div>
-                </div>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Time Load Section */}
+            <section className="py-24 bg-black-800 border-t border-white/5 relative overflow-hidden">
+                {/* Decoration */}
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center mb-16">
-                        <span className="inline-block border border-blue-400/50 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-4 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
-                            Instalaciones
-                        </span>
-                        <h2 className="text-4xl font-black mb-4 tracking-tight">Canchas <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Oficiales</span></h2>
-                        <p className="text-blue-100/60 max-w-2xl mx-auto">Nuestras clases se imparten en los mejores clubes de la región, garantizando canchas de primer nivel y un entorno seguro.</p>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Carga Horaria del Programa</h2>
+                        <p className="text-gray-400">Estructura semanal y mensual diseñada para mantener la regularidad.</p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="space-y-6">
-                            {/* Card 1 */}
-                            <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-blue-400 hover:bg-blue-900/20 transition-all hover:scale-[1.02] cursor-default group">
-                                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all shrink-0">
-                                    <i className="fas fa-map-marker-alt"></i>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                        {/* Weekly Box */}
+                        <div className="bg-gradient-to-br from-black-900 to-black-800 p-[2px] rounded-[2rem] shadow-2xl relative group">
+                            <div className="bg-black-900 rounded-[2rem] p-10 h-full flex flex-col justify-center items-center text-center relative overflow-hidden">
+                                <div className="text-gold-500 mb-6 text-5xl opacity-80 group-hover:scale-110 transition-transform">
+                                    <i className="fas fa-calendar-week"></i>
                                 </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-1">Club El Refugio</h4>
-                                    <p className="text-blue-200/60 font-medium">Viña del Mar</p>
-                                </div>
-                            </div>
-                            {/* Card 3 */}
-                            <div className="bg-[#1e293b]/60 backdrop-blur-md border border-blue-500/20 p-6 rounded-2xl flex items-center gap-6 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all hover:scale-[1.02] cursor-default group">
-                                <div className="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center text-cyan-400 text-2xl group-hover:bg-cyan-500 group-hover:text-white group-hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all shrink-0">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 className="text-xl font-bold text-white mb-1">Club de Tenis Con Con</h4>
-                                    <p className="text-cyan-200/60 font-medium">Con Con</p>
+                                <h3 className="text-2xl font-bold text-white mb-8">Horas por Semana</h3>
+
+                                <ul className="space-y-4 mb-8 w-full">
+                                    <li className="flex justify-between items-center text-gray-300 border-b border-white/5 pb-3">
+                                        <span>Frecuencia</span>
+                                        <span className="font-semibold text-white">2 sesiones semanales</span>
+                                    </li>
+                                    <li className="flex justify-between items-center text-gray-300 border-b border-white/5 pb-3">
+                                        <span>Duración</span>
+                                        <span className="font-semibold text-white">1 hora por sesión</span>
+                                    </li>
+                                </ul>
+
+                                <div className="mt-auto bg-gold-500/10 border border-gold-500/20 w-full py-4 rounded-xl">
+                                    <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Total Semanal</p>
+                                    <p className="text-3xl font-black text-gold-500">2 Horas</p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Map iframe */}
-                        <div className="h-[450px] rounded-3xl overflow-hidden border border-blue-500/30 shadow-[0_10px_40px_rgba(59,130,246,0.15)] relative group">
-                            <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none z-10"></div>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106981.42823617181!2d-71.60223594164893!3d-33.015243888371306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de8ea73767cd%3A0xe6bf4b65dd4b105a!2sVi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1714588265000!5m2!1ses!2scl"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen=""
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                className="grayscale-[70%] contrast-125 opacity-90 group-hover:grayscale-[20%] group-hover:opacity-100 transition-all duration-700"
-                            ></iframe>
+                        {/* Monthly Box */}
+                        <div className="bg-gradient-to-br from-gold-600 via-gold-500 to-yellow-400 p-[2px] rounded-[2rem] shadow-[0_0_40px_rgba(212,175,55,0.2)] relative group hover:-translate-y-2 transition-transform duration-500">
+                            <div className="bg-black-900 rounded-[2rem] p-10 h-full flex flex-col justify-center items-center text-center relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-bl-full pointer-events-none"></div>
+                                <div className="text-gold-500 mb-6 text-5xl group-hover:scale-110 transition-transform">
+                                    <i className="fas fa-calendar-alt"></i>
+                                </div>
+                                <h3 className="text-2xl font-bold text-white mb-8">Horas por Mes</h3>
+
+                                <ul className="space-y-4 mb-8 w-full">
+                                    <li className="flex justify-between items-center text-gray-300 border-b border-white/5 pb-3">
+                                        <span>Progreso</span>
+                                        <span className="font-semibold text-white">2 horas x 4 semanas</span>
+                                    </li>
+                                </ul>
+
+                                <div className="mt-auto bg-gradient-to-r from-gold-500 to-yellow-500 w-full py-4 rounded-xl shadow-lg">
+                                    <p className="text-xs text-black-900/70 font-bold uppercase tracking-widest mb-1">Total Mensual por Grupo</p>
+                                    <p className="text-4xl font-black text-black-900">8 Horas</p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div className="mt-16 text-center">
+                        <a href="https://wa.me/56932732917?text=Hola,%20me%20interesa%20inscribir%20a%20mi%20hijo%20en%20el%20programa%20Mensual%20de%20Junior%20Coaching"
+                            target="_blank" rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center bg-white hover:bg-gray-200 text-black-900 px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl">
+                            Solicitar Cupo <i className="fas fa-check-circle ml-2"></i>
+                        </a>
                     </div>
                 </div>
             </section>
