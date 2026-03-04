@@ -9,9 +9,12 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-    title: 'By Coach Quiroz | Entrenamiento de Tenis de Alto Rendimiento',
-    description:
-        'Lleva tu tenis al siguiente nivel con Andrés Quiroz. Entrenamiento de alto rendimiento, análisis biomecánico y estrategia competitiva en Chile.',
+    title: 'Clases de Tenis en Viña del Mar y Concón | By Coach Quiroz',
+    description: 'Mejora tu técnica con las mejores clases de tenis en Viña del Mar. Entrena con Andrés Quiroz: clases particulares, junior tenis y programas para adultos.',
+    keywords: ['clases de tenis viña del mar', 'clases de tenis particulares', 'junior tenis', 'tenis para adultos', 'clases de tenis grupales'],
+    openGraph: {
+        locale: 'es_CL',
+    },
     icons: {
         icon: '/images/logo.jpeg',
         apple: '/images/logo.jpeg',
