@@ -128,7 +128,7 @@ export default function Home() {
                             ALTO RENDIMIENTO Y ESTRATEGIA
                         </span>
                         <h1 className="text-5xl sm:text-7xl font-bold leading-tight mb-6">
-                            Clases de tenis en <br />
+                            Academia de Tenis en <br />
                             <span className="text-gradient">Viña del Mar y Concón</span>
                         </h1>
                         <p className="text-xl sm:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
@@ -240,7 +240,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                         <div>
-                            <h2 className="text-3xl font-bold mb-6">Dónde encontrar academias de tenis en Viña del Mar</h2>
+                            <h2 className="text-3xl font-bold mb-6">Nuestra filosofía de entrenamiento</h2>
                             <p className="text-gray-300 mb-6 text-lg leading-relaxed">
                                 En Coach Quiroz Tennis Academy, ofrecemos programas diseñados para <strong className="text-white">todo público</strong>. Desde niños que dan sus primeros pasos en la cancha hasta adultos y jugadores de alto rendimiento.
                             </p>
@@ -579,10 +579,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <FAQ />
-
             {/* ── NEWSLETTER ── */}
             <Newsletter />
+
+            {/* ── FAQ ── */}
+            <FAQ />
 
             {/* ── FOOTER ── */}
             <footer className="bg-black-900 border-t border-white/10 pt-16 pb-8">
