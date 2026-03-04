@@ -9,8 +9,8 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-    title: 'Clases de Tenis en Viña del Mar y Concón | By Coach Quiroz',
-    description: 'Mejora tu técnica con las mejores clases de tenis en Viña del Mar. Entrena con Andrés Quiroz: clases particulares, junior tenis y programas para adultos.',
+    title: 'Clases de Tenis en Viña del Mar - By Coach Quiroz',
+    description: 'Descubre las clases de tenis en Viña del Mar con la escuela Bycoachquiroz. Mejora tu técnica y táctica con entrenamientos personalizados y grupos reducidos. ¡Inscríbete hoy!',
     keywords: ['clases de tenis viña del mar', 'clases de tenis particulares', 'junior tenis', 'tenis para adultos', 'clases de tenis grupales'],
     openGraph: {
         locale: 'es_CL',
