@@ -128,7 +128,7 @@ export default function Home() {
                             ALTO RENDIMIENTO Y ESTRATEGIA
                         </span>
                         <h1 className="text-5xl sm:text-7xl font-bold leading-tight mb-6">
-                            Academia de Tenis en <br />
+                            Clases de tenis en <br />
                             <span className="text-gradient">Viña del Mar y Concón</span>
                         </h1>
                         <p className="text-xl sm:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
