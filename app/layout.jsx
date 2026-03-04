@@ -57,7 +57,7 @@ gtag('config', 'G-0XVWQ0THPW');
                 />
             </head>
             <body
-                className={`${outfit.className} bg-[#0a0a0a] text-white antialiased overflow-x-hidden`}
+                className={`${outfit.className} bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1510] text-white antialiased overflow-x-hidden`}
             >
                 {/* Google Tag Manager (noscript) */}
                 <noscript>
