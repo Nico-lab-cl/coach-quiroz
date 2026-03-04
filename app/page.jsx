@@ -526,14 +526,14 @@ export default function Home() {
                         <h2 className="text-3xl sm:text-4xl font-bold text-white">Lo que dicen mis <span className="text-gold-500">alumnos</span></h2>
                     </div>
 
-                    {/* Two-column cards grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* Three-column cards grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                         {/* Testimonial 1 – Alexander Cataldo */}
                         <div className="bg-black-900/80 backdrop-blur-md border border-white/5 hover:border-gold-500/20 rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 shadow-xl group">
                             <div>
                                 <i className="fas fa-quote-left text-gold-500/20 text-5xl mb-6 block"></i>
-                                <p className="text-gray-300 text-base sm:text-lg italic leading-relaxed">
+                                <p className="text-gray-300 text-sm sm:text-base italic leading-relaxed">
                                     &ldquo;Entrenar con Andrés en Alemania fue una gran experiencia. Aprendí muchísimo en pocas semanas y destacó su profesionalismo y experiencia como jugador de alto nivel. 100% recomendado.&rdquo;
                                 </p>
                             </div>
@@ -546,8 +546,8 @@ export default function Home() {
                                     />
                                 </div>
                                 <div>
-                                    <p className="text-white font-bold">Alexander Cataldo</p>
-                                    <p className="text-gold-500 text-sm">Tenista Chileno · Tenis en Silla de Ruedas</p>
+                                    <p className="text-white font-bold text-sm">Alexander Cataldo</p>
+                                    <p className="text-gold-500 text-xs mt-0.5">Tenista Chileno · Tenis en Silla de Ruedas</p>
                                 </div>
                             </div>
                         </div>
@@ -556,7 +556,7 @@ export default function Home() {
                         <div className="bg-black-900/80 backdrop-blur-md border border-white/5 hover:border-gold-500/20 rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 shadow-xl group">
                             <div>
                                 <i className="fas fa-quote-left text-gold-500/20 text-5xl mb-6 block"></i>
-                                <p className="text-gray-300 text-base sm:text-lg italic leading-relaxed">
+                                <p className="text-gray-300 text-sm sm:text-base italic leading-relaxed">
                                     &ldquo;Durante los últimos 4 años, Andrés ha sido un apoyo fundamental en mi crecimiento profesional y personal. Gracias a su guía y respaldo constante, pude proyectar mi carrera a nivel internacional en Alemania. Su trabajo y experiencia son más que recomendados.&rdquo;
                                 </p>
                             </div>
@@ -569,8 +569,31 @@ export default function Home() {
                                     />
                                 </div>
                                 <div>
-                                    <p className="text-white font-bold">Daniel Rojas</p>
-                                    <p className="text-gold-500 text-sm">Entrenador de Tenis · Chile</p>
+                                    <p className="text-white font-bold text-sm">Daniel Rojas</p>
+                                    <p className="text-gold-500 text-xs mt-0.5">Entrenador de Tenis · Chile</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Testimonial 3 – Laura Grimsehl */}
+                        <div className="bg-black-900/80 backdrop-blur-md border border-white/5 hover:border-gold-500/20 rounded-3xl p-8 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 shadow-xl group">
+                            <div>
+                                <i className="fas fa-quote-left text-gold-500/20 text-5xl mb-6 block"></i>
+                                <p className="text-gray-300 text-sm sm:text-base italic leading-relaxed">
+                                    &ldquo;Entrené con Andrés durante dos años en Alemania, comenzando como principiante. Su enfoque dinámico y ambicioso me ayudó a mejorar enormemente en mentalidad y técnica. Los entrenamientos siempre fueron motivadores y enfocados en los detalles. 100% recomendado.&rdquo;
+                                </p>
+                            </div>
+                            <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
+                                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-gold-500/30 group-hover:border-gold-500 transition-colors shrink-0">
+                                    <img
+                                        src="/images/testimonial-laura.png"
+                                        alt="Laura Grimsehl"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <div>
+                                    <p className="text-white font-bold text-sm">Laura Grimsehl</p>
+                                    <p className="text-gold-500 text-xs mt-0.5">Heiligenhafen, Alemania.</p>
                                 </div>
                             </div>
                         </div>
