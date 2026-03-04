@@ -45,7 +45,7 @@ export default function Home() {
             <nav className="fixed w-full z-50 transition-all duration-300 bg-glass border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
-                        <Link href="/login" className="flex-shrink-0 flex items-center group cursor-pointer text-white">
+                        <Link href="/" className="flex-shrink-0 flex items-center group cursor-pointer text-white">
                             <img className="h-12 w-auto rounded-full border border-gold-500/30 group-hover:border-gold-500 transition-colors duration-300" src="/images/logo.jpeg" alt="Logo" />
                             <span className="ml-3 text-xl font-bold tracking-tight group-hover:text-gold-500 transition-colors duration-300">BY <span className="text-gold-500 group-hover:text-white transition-colors duration-300">COACHQUIROZ</span></span>
                         </Link>
