@@ -16,7 +16,7 @@ const GALLERY = [
     { src: '/images/gallery-09.jpg', alt: 'Clases de tenis en canchas de arcilla' },
     { src: '/images/gallery-10.jpg', alt: 'Entrenamiento táctico y estratégico de tenis' },
     { src: '/images/gallery-11.jpg', alt: 'Profesor de tenis con experiencia internacional' },
-    { src: '/images/gallery-12.jpg', alt: 'Academia de tenis By Coach Quiroz' },
+    { src: '/images/gallery-12.jpg', alt: 'Escuela de tenis By Coach Quiroz' },
 ];
 
 const METHODOLOGY = [
@@ -242,7 +242,7 @@ export default function Home() {
                         <div>
                             <h2 className="text-3xl font-bold mb-6">Nuestra filosofía de entrenamiento</h2>
                             <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                                En Coach Quiroz Tennis Academy, ofrecemos programas diseñados para <strong className="text-white">todo público</strong>. Desde niños que dan sus primeros pasos en la cancha hasta adultos y jugadores de alto rendimiento.
+                                En la escuela de tenis By Coach Quiroz, ofrecemos programas diseñados para <strong className="text-white">todo público</strong>. Desde niños que dan sus primeros pasos en la cancha hasta adultos y jugadores de alto rendimiento.
                             </p>
                             <p className="text-gray-300 mb-8 leading-relaxed">
                                 Nos enfocamos en un desarrollo integral, combinando la intensidad física con la inteligencia táctica, en un ambiente que fomenta la disciplina y la pasión por el tenis.
@@ -616,7 +616,7 @@ export default function Home() {
                         <div className="text-center md:text-left">
                             <span className="text-xl font-bold tracking-tight text-white">BY <span className="text-gold-500">COACHQUIROZ</span></span>
                             <p className="text-gray-400 text-sm mt-4 leading-relaxed">
-                                Academia de tenis de alto rendimiento en Viña del Mar y Concón. Metodología europea y resultados comprobados en cancha.
+                                Escuela de tenis de alto rendimiento en Viña del Mar y Concón. Metodología europea y resultados comprobados en cancha.
                             </p>
                             <a href="mailto:contacto@bycoachquiroz.cl" className="text-gold-500 hover:text-white text-sm transition-colors mt-4 inline-block font-semibold">
                                 <i className="fas fa-envelope mr-2"></i>contacto@bycoachquiroz.cl
@@ -666,7 +666,7 @@ export default function Home() {
                     </div>
 
                     <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm gap-4">
-                        <p>&copy; {new Date().getFullYear()} By Coach Quiroz. Academia de Tenis en Viña del Mar.</p>
+                        <p>&copy; {new Date().getFullYear()} By Coach Quiroz. Escuela de Tenis en Viña del Mar.</p>
                         <p className="text-xs">Todos los derechos reservados.</p>
                     </div>
                 </div>
