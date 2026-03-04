@@ -588,25 +588,63 @@ export default function Home() {
             {/* ── FOOTER ── */}
             <footer className="bg-black-900 border-t border-white/10 pt-16 pb-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-                        <div className="mb-6 md:mb-0 text-center md:text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                        {/* Marca y Contacto */}
+                        <div className="text-center md:text-left">
                             <span className="text-xl font-bold tracking-tight text-white">BY <span className="text-gold-500">COACHQUIROZ</span></span>
-                            <p className="text-gray-500 text-sm mt-2">Elevando el nivel del tenis en Chile.</p>
-                            <a href="mailto:contacto@bycoachquiroz.cl" className="text-gold-500 hover:text-white text-sm transition-colors mt-1 inline-block">contacto@bycoachquiroz.cl</a>
+                            <p className="text-gray-400 text-sm mt-4 leading-relaxed">
+                                Academia de tenis de alto rendimiento en Viña del Mar y Concón. Metodología europea y resultados comprobados en cancha.
+                            </p>
+                            <a href="mailto:contacto@bycoachquiroz.cl" className="text-gold-500 hover:text-white text-sm transition-colors mt-4 inline-block font-semibold">
+                                <i className="fas fa-envelope mr-2"></i>contacto@bycoachquiroz.cl
+                            </a>
                         </div>
-                        <div className="flex gap-6">
-                            <a href="https://www.instagram.com/by.coachquiroz/" target="_blank" rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-gold-500 text-2xl transition-colors">
-                                <i className="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-green-500 text-2xl transition-colors">
-                                <i className="fab fa-whatsapp"></i>
-                            </a>
+
+                        {/* Programas (SEO Links) */}
+                        <div className="text-center md:text-left">
+                            <h4 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-4">Nuestros Programas</h4>
+                            <ul className="space-y-3">
+                                <li>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center justify-center md:justify-start gap-2 group">
+                                        <i className="fas fa-chevron-right text-[10px] text-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                        Clases de tenis particulares
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/programas/junior-tenis" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center justify-center md:justify-start gap-2 group">
+                                        <i className="fas fa-chevron-right text-[10px] text-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                        Junior Tenis (Formación)
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/programas/tenis-para-adultos" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center justify-center md:justify-start gap-2 group">
+                                        <i className="fas fa-chevron-right text-[10px] text-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                        Clases de tenis para adultos
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Redes Sociales */}
+                        <div className="text-center md:text-left">
+                            <h4 className="text-gold-500 text-sm font-bold tracking-widest uppercase mb-4">Síguenos</h4>
+                            <p className="text-gray-400 text-sm mb-4">Únete a nuestra comunidad y sigue nuestro día a día en la cancha.</p>
+                            <div className="flex justify-center md:justify-start gap-4">
+                                <a href="https://www.instagram.com/by.coachquiroz/" target="_blank" rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-red-500 hover:to-purple-500 hover:text-white transition-all duration-300">
+                                    <i className="fab fa-instagram text-lg"></i>
+                                </a>
+                                <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white transition-all duration-300">
+                                    <i className="fab fa-whatsapp text-lg"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="border-t border-white/5 pt-8 text-center text-gray-600 text-sm">
-                        <p>&copy; 2026 By Coach Quiroz. Todos los derechos reservados.</p>
+
+                    <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm gap-4">
+                        <p>&copy; {new Date().getFullYear()} By Coach Quiroz. Academia de Tenis en Viña del Mar.</p>
+                        <p className="text-xs">Todos los derechos reservados.</p>
                     </div>
                 </div>
             </footer>
