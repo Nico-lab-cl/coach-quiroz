@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Newsletter from '../components/Newsletter';
+import FAQ from '../components/FAQ';
 
 const GALLERY = [
     { src: '/images/gallery-01.jpg', alt: 'Clases de tenis viña del mar - Entrenamiento en cancha' },
@@ -55,12 +56,12 @@ export default function Home() {
                             {/* Dropdown Personalizados */}
                             <div className="relative group">
                                 <button className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-1 py-4">
-                                    Personalizados <i className="fas fa-chevron-down text-[10px] ml-1"></i>
+                                    Clases de tenis particulares <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">CLASES DE TENIS BÁSICAS</Link>
-                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">CLASES DE TENIS PARTICULARES</Link>
-                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">PARTICULARES PREMIUM</Link>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">START TENIS</Link>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">PERFORMANCE PACK</Link>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">FOUNDATION PACK</Link>
                                 </div>
                             </div>
 
@@ -94,10 +95,10 @@ export default function Home() {
                             <a href="#methodology" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-gray-300 hover:text-gold-500">Metodología</a>
 
                             <div className="py-2 text-left">
-                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Personalizados</span>
-                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">CLASES DE TENIS BÁSICAS</Link>
-                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">CLASES DE TENIS PARTICULARES</Link>
-                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">PARTICULARES PREMIUM</Link>
+                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Clases de tenis particulares</span>
+                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">START TENIS</Link>
+                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">PERFORMANCE PACK</Link>
+                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">FOUNDATION PACK</Link>
                             </div>
 
                             <div className="py-2 text-left border-t border-white/5">
@@ -124,14 +125,14 @@ export default function Home() {
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left w-full h-full flex flex-col justify-center">
                     <div className="max-w-3xl">
                         <span className="inline-block py-1 px-3 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-500 text-sm font-semibold tracking-wider mb-6">
-                            ALTO RENDIMIENTO &amp; ESTRATEGIA
+                            ALTO RENDIMIENTO Y ESTRATEGIA
                         </span>
                         <h1 className="text-5xl sm:text-7xl font-bold leading-tight mb-6">
                             Clases de tenis en <br />
                             <span className="text-gradient">Viña del Mar y Concón</span>
                         </h1>
                         <p className="text-xl sm:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
-                            Entrenamiento de alto rendimiento, análisis biomecánico y estrategia competitiva con By Coach Quiroz.
+                            Entrenamiento de alto rendimiento, análisis biomecánico y estrategia competitiva en la escuela de tenis bycoachquiroz
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
@@ -330,7 +331,7 @@ export default function Home() {
                                         <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
                                             Principiante
                                         </span>
-                                        <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Clases de tenis básicas</h3>
+                                        <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">START TENIS</h3>
                                         <p className="text-gray-400 text-lg">Tu primer paso estructurado en la cancha.</p>
                                     </div>
                                     <ul className="space-y-5 mb-12 flex-1">
@@ -359,7 +360,7 @@ export default function Home() {
                                         <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5">
                                             1 a 1
                                         </span>
-                                        <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Clases de tenis particulares</h3>
+                                        <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">PERFORMANCE PACK</h3>
                                         <p className="text-gray-400 text-lg">Corrección y técnica de alto estándar.</p>
                                     </div>
                                     <ul className="space-y-5 mb-12 flex-1">
@@ -394,7 +395,7 @@ export default function Home() {
                                             <span className="inline-block border border-gold-500 text-gold-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-5 shadow-[0_0_10px_rgba(212,175,55,0.2)]">
                                                 Inmersión Competitiva
                                             </span>
-                                            <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">Particulares Premium</h3>
+                                            <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">FOUNDATION PACK</h3>
                                             <p className="text-gray-400 text-lg">Inmersión y acompañamiento competitivo total.</p>
                                         </div>
                                         <ul className="space-y-5 mb-12 flex-1">
@@ -578,33 +579,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* ── PREGUNTAS FRECUENTES (FAQ) ── */}
-            <section className="py-24 bg-black-900 border-t border-white/5">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Preguntas Frecuentes</h2>
-                        <h3 className="text-gold-500 text-sm font-bold tracking-widest uppercase">Resuelve tus dudas</h3>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="bg-black-800/50 p-6 rounded-xl border border-white/5">
-                            <h4 className="text-xl font-bold text-white mb-3">¿Dónde encontrar academias de tenis en Viña del Mar?</h4>
-                            <p className="text-gray-300 leading-relaxed">Si buscas resultados reales y no solo pelotear, entrenamos en el Club El Refugio (Viña del Mar) y en el Club de Tenis Con Con. A diferencia de las escuelas masivas o clubes tradicionales saturados, aquí priorizamos la corrección biomecánica y táctica en grupos reducidos o clases uno a uno.</p>
-                        </div>
-                        <div className="bg-black-800/50 p-6 rounded-xl border border-white/5">
-                            <h4 className="text-xl font-bold text-white mb-3">¿Cuáles son las mejores escuelas de tenis en Viña del Mar?</h4>
-                            <p className="text-gray-300 leading-relaxed">La ciudad tiene clubes históricos con buena infraestructura, pero si tu objetivo es el alto rendimiento o aprender desde cero sin vicios técnicos, By Coach Quiroz te ofrece un estándar europeo. Andrés Quiroz aporta su experiencia como Head Coach en Alemania e Irlanda directamente a tu desarrollo en cancha.</p>
-                        </div>
-                        <div className="bg-black-800/50 p-6 rounded-xl border border-white/5">
-                            <h4 className="text-xl font-bold text-white mb-3">Mejores instructores de tenis con experiencia en Viña.</h4>
-                            <p className="text-gray-300 leading-relaxed">No pierdas tiempo probando suerte en plataformas de profesores amateur. Andrés Quiroz cuenta con más de 8 años en el circuito internacional y actualmente dirige a jugadores Top 10 nacionales de menores. Es la opción segura para quienes buscan subir de nivel de forma estructurada.</p>
-                        </div>
-                        <div className="bg-black-800/50 p-6 rounded-xl border border-white/5">
-                            <h4 className="text-xl font-bold text-white mb-3">¿Dónde puedo reservar clases privadas de tenis cerca de Viña del Mar?</h4>
-                            <p className="text-gray-300 leading-relaxed">Evita intermediarios y listas de espera. Reserva tus clases de tenis particulares escribiendo directamente a nuestro WhatsApp (+56932732917). Agenda tu evaluación, define tus objetivos y entrena en canchas de arcilla de primer nivel en la V Región.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <FAQ />
 
             {/* ── NEWSLETTER ── */}
             <Newsletter />
