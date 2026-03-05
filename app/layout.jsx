@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="es" className="scroll-smooth">
             <head>
+                <meta name="facebook-domain-verification" content="0oka1h11q3x6x23unvuzzkwubod97u" />
                 {/* Google Tag Manager */}
                 <script
                     dangerouslySetInnerHTML={{
