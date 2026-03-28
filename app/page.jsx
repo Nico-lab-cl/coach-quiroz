@@ -76,10 +76,10 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
+                            <Link href="/contacto"
                                 className="bg-gold-500 hover:bg-gold-400 text-black-900 px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)] ml-4">
-                                Agenda tu clase
-                            </a>
+                                Contacto
+                            </Link>
                         </div>
                         <div className="md:hidden flex items-center">
                             <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-300 hover:text-white focus:outline-none">
@@ -107,8 +107,8 @@ export default function Home() {
                                 <Link href="/programas/tenis-para-adultos" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">TENIS PARA ADULTOS</Link>
                             </div>
 
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
-                                className="block w-full mt-4 bg-gold-500 text-black-900 px-5 py-3 rounded font-bold">Agenda tu clase</a>
+                            <Link href="/contacto" onClick={() => setMenuOpen(false)}
+                                className="block w-full mt-4 bg-gold-500 text-black-900 px-5 py-3 rounded font-bold text-center">Contacto</Link>
                         </div>
                     </div>
                 )}

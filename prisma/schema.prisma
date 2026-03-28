@@ -36,3 +36,27 @@ model Newsletter {
   active    Boolean  @default(true)
   createdAt DateTime @default(now())
 }
+
+model ContactLead {
+  id            String   @id @default(cuid())
+  name          String
+  email         String
+  phone         String
+  classInterest String
+
+  // UTM Tracking
+  utmSource     String?
+  utmMedium     String?
+  utmCampaign   String?
+  utmTerm       String?
+  utmContent    String?
+
+  // Geolocation & Device
+  ipAddress     String?
+  country       String?
+  city          String?
+  userAgent     String?
+  referrer      String?
+
+  createdAt     DateTime @default(now())
+}
