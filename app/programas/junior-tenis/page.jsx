@@ -59,9 +59,9 @@ export default function JuniorCoachingPage() {
                                     Personalizados <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">START TENIS</Link>
-                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">PERFORMANCE PACK</Link>
-                                    <Link href="/programas/personalizados" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">FOUNDATION PACK</Link>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">START TENIS</Link>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">PERFORMANCE PACK</Link>
+                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">FOUNDATION PACK</Link>
                                 </div>
                             </div>
 
@@ -71,8 +71,8 @@ export default function JuniorCoachingPage() {
                                     Programas <i className="fas fa-chevron-down text-[10px] ml-1"></i>
                                 </button>
                                 <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/juniors" className="block px-5 py-3 text-sm text-gold-500 bg-white/5 border-b border-white/5 transition-colors">JUNIOR COACHING</Link>
-                                    <Link href="/programas/after-office" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">AFTER OFFICE TENNIS</Link>
+                                    <Link href="/programas/junior-tenis" className="block px-5 py-3 text-sm text-gold-500 bg-white/5 border-b border-white/5 transition-colors">JUNIOR COACHING</Link>
+                                    <Link href="/programas/tenis-para-adultos" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">AFTER OFFICE TENNIS</Link>
                                 </div>
                             </div>
 
@@ -103,15 +103,15 @@ export default function JuniorCoachingPage() {
 
                             <div className="py-2 text-left">
                                 <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Personalizados</span>
-                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">START TENIS</Link>
-                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">PERFORMANCE PACK</Link>
-                                <Link href="/programas/personalizados" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">FOUNDATION PACK</Link>
+                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">START TENIS</Link>
+                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">PERFORMANCE PACK</Link>
+                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">FOUNDATION PACK</Link>
                             </div>
 
                             <div className="py-2 text-left border-t border-white/5">
                                 <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Programas</span>
-                                <Link href="/programas/juniors" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gold-500 bg-white/5 transition-colors text-sm">JUNIOR COACHING</Link>
-                                <Link href="/programas/after-office" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">AFTER OFFICE TENNIS</Link>
+                                <Link href="/programas/junior-tenis" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gold-500 bg-white/5 transition-colors text-sm">JUNIOR COACHING</Link>
+                                <Link href="/programas/tenis-para-adultos" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">AFTER OFFICE TENNIS</Link>
                             </div>
 
                             <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"

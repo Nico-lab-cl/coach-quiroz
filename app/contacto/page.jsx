@@ -1,4 +1,5 @@
 import ContactForm from '../../components/ContactForm';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Contacto - By Coach Quiroz | Clases de Tenis en Viña del Mar',
@@ -17,9 +18,15 @@ export default function ContactoPage() {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    {/* Back arrow */}
+                    <Link href="/" className="inline-flex items-center gap-2 text-gray-400 hover:text-gold-500 transition-colors mb-6 group">
+                        <i className="fas fa-arrow-left text-sm group-hover:-translate-x-1 transition-transform"></i>
+                        <span className="text-sm">Volver al inicio</span>
+                    </Link>
+
                     {/* Breadcrumb */}
                     <nav className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-                        <a href="/" className="hover:text-gold-500 transition-colors">Inicio</a>
+                        <Link href="/" className="hover:text-gold-500 transition-colors">Inicio</Link>
                         <i className="fas fa-chevron-right text-[8px] text-gray-600"></i>
                         <span className="text-gold-500">Contacto</span>
                     </nav>
