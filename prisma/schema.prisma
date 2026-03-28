@@ -34,6 +34,21 @@ model Newsletter {
   id        String   @id @default(cuid())
   email     String   @unique
   active    Boolean  @default(true)
+
+  // UTM Tracking
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  utmTerm     String?
+  utmContent  String?
+
+  // Geolocation & Device
+  ipAddress   String?
+  country     String?
+  city        String?
+  userAgent   String?
+  referrer    String?
+
   createdAt DateTime @default(now())
 }
 

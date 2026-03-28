@@ -1,11 +1,26 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Newsletter() {
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('idle'); // idle, loading, success, error
     const [message, setMessage] = useState('');
+    const [utmParams, setUtmParams] = useState({});
+    const [referrer, setReferrer] = useState('');
+
+    // Capture UTM params and referrer on mount
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        setUtmParams({
+            utmSource: params.get('utm_source') || '',
+            utmMedium: params.get('utm_medium') || '',
+            utmCampaign: params.get('utm_campaign') || '',
+            utmTerm: params.get('utm_term') || '',
+            utmContent: params.get('utm_content') || '',
+        });
+        setReferrer(document.referrer || '');
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,7 +31,11 @@ export default function Newsletter() {
             const res = await fetch('/api/newsletter', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({
+                    email,
+                    ...utmParams,
+                    referrer,
+                }),
             });
             const data = await res.json();
             if (res.ok) {
