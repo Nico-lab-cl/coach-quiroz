@@ -2,6 +2,7 @@ import { Outfit } from 'next/font/google';
 import './globals.css';
 import CookieConsent from '../components/CookieConsent';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import Navbar from '../components/Navbar';
 
 const outfit = Outfit({
     subsets: ['latin'],
@@ -70,6 +71,7 @@ gtag('config', 'G-0XVWQ0THPW');
                     ></iframe>
                 </noscript>
                 {/* End Google Tag Manager (noscript) */}
+                <Navbar />
                 {children}
                 <CookieConsent />
                 <FloatingWhatsApp />

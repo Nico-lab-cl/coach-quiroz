@@ -5,22 +5,6 @@ import Link from 'next/link';
 export default function AfterOfficeCoaching() {
     return (
         <div className="min-h-screen bg-[#050505] pb-20 selection:bg-rose-500/30 selection:text-white">
-            {/* Minimal VIP Navbar */}
-            <nav className="fixed w-full z-50 transition-all duration-300 bg-[#000000]/90 backdrop-blur-xl border-b border-rose-500/10">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-20">
-                        <Link href="/" className="flex-shrink-0 flex items-center group text-white">
-                            <i className="fas fa-arrow-left mr-3 text-rose-500 group-hover:-translate-x-1 transition-transform"></i>
-                            <span className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase group-hover:text-white transition-colors">Volver</span>
-                        </Link>
-                        <div className="flex-shrink-0 flex items-center">
-                            <span className="text-xl font-bold tracking-widest text-white">
-                                AFTER <span className="text-rose-500 font-light italic">OFFICE</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
             {/* Exclusive Hero Section */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">

@@ -16,7 +16,6 @@ const GALLERY = [
 ];
 
 export default function JuniorCoachingPage() {
-    const [menuOpen, setMenuOpen] = useState(false);
     const [modalSrc, setModalSrc] = useState(null);
 
     // Prevent scrolling when modal is open
@@ -26,125 +25,6 @@ export default function JuniorCoachingPage() {
 
     return (
         <div className="min-h-screen bg-black-900 pb-0 selection:bg-gold-500 selection:text-black-900 font-sans">
-
-            {/* ── NAVBAR (Matching Home) ── */}
-            <nav className="fixed w-full z-50 transition-all duration-300 bg-black-900/90 backdrop-blur-md border-b border-white/10">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-20">
-                        <div className="flex items-center gap-4">
-                            {/* Back Button */}
-                            <button onClick={() => window.history.back()} className="text-gray-400 hover:text-gold-500 transition-colors md:hidden">
-                                <i className="fas fa-arrow-left text-xl"></i>
-                            </button>
-
-                            <Link href="/" className="flex-shrink-0 flex items-center group cursor-pointer text-white">
-                                <img className="h-12 w-auto rounded-full border border-gold-500/30 group-hover:border-gold-500 transition-colors duration-300" src="/images/logo.jpeg" alt="Logo" />
-                                <span className="ml-3 text-xl font-bold tracking-tight hidden sm:block group-hover:text-gold-500 transition-colors duration-300">BY <span className="text-gold-500 group-hover:text-white transition-colors duration-300">COACHQUIROZ</span></span>
-                            </Link>
-
-                        </div>
-
-                        {/* Desktop Menu */}
-                        <div className="hidden md:flex items-center space-x-8">
-                            <button onClick={() => window.history.back()} className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-2">
-                                <i className="fas fa-arrow-left"></i> Volver a Programas
-                            </button>
-
-                            <a href="/#about" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Sobre mí</a>
-                            <a href="/#methodology" className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider">Metodología</a>
-
-                            {/* Dropdown Personalizados */}
-                            <div className="relative group">
-                                <button className="text-gray-300 hover:text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-1 py-4">
-                                    Personalizados <i className="fas fa-chevron-down text-[10px] ml-1"></i>
-                                </button>
-                                <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">START TENIS</Link>
-                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 border-b border-white/5 transition-colors">PERFORMANCE PACK</Link>
-                                    <Link href="/programas/clases-de-tenis-particulares" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">FOUNDATION PACK</Link>
-                                </div>
-                            </div>
-
-                            {/* Dropdown Programas */}
-                            <div className="relative group">
-                                <button className="text-gold-500 transition-colors text-sm uppercase tracking-wider flex items-center gap-1 py-4">
-                                    Programas <i className="fas fa-chevron-down text-[10px] ml-1"></i>
-                                </button>
-                                <div className="absolute top-full left-0 w-56 bg-black-900/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden transform group-hover:translate-y-0 translate-y-2">
-                                    <Link href="/programas/junior-tenis" className="block px-5 py-3 text-sm text-gold-500 bg-white/5 border-b border-white/5 transition-colors">JUNIOR COACHING</Link>
-                                    <Link href="/programas/tenis-para-adultos" className="block px-5 py-3 text-sm text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 transition-colors">AFTER OFFICE TENNIS</Link>
-                                </div>
-                            </div>
-
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
-                                className="bg-gold-500 hover:bg-gold-400 text-black-900 px-6 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)] ml-4">
-                                Agenda tu clase
-                            </a>
-                        </div>
-
-                        {/* Mobile menu button */}
-                        <div className="md:hidden flex items-center">
-                            <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-300 hover:text-white focus:outline-none">
-                                <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Mobile Menu */}
-                {menuOpen && (
-                    <div className="md:hidden bg-black-800 border-t border-white/10 absolute w-full">
-                        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-                            <button onClick={() => window.history.back()} className="w-full block px-3 py-3 text-gray-400 border-b border-white/5 uppercase tracking-widest text-sm font-bold">
-                                <i className="fas fa-arrow-left mr-2"></i> Volver
-                            </button>
-                            <a href="/#about" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-gray-300 hover:text-gold-500">Sobre mí</a>
-                            <a href="/#methodology" onClick={() => setMenuOpen(false)} className="block px-3 py-2 text-gray-300 hover:text-gold-500">Metodología</a>
-
-                            <div className="py-2 text-left">
-                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Personalizados</span>
-                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">START TENIS</Link>
-                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">PERFORMANCE PACK</Link>
-                                <Link href="/programas/clases-de-tenis-particulares" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">FOUNDATION PACK</Link>
-                            </div>
-
-                            <div className="py-2 text-left border-t border-white/5">
-                                <span className="block px-3 text-gold-500 text-xs font-bold uppercase tracking-widest mb-2 opacity-70">Programas</span>
-                                <Link href="/programas/junior-tenis" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gold-500 bg-white/5 transition-colors text-sm">JUNIOR COACHING</Link>
-                                <Link href="/programas/tenis-para-adultos" onClick={() => setMenuOpen(false)} className="block pl-6 py-1.5 text-gray-400 hover:text-white hover:bg-white/5 transition-colors text-sm">AFTER OFFICE TENNIS</Link>
-                            </div>
-
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
-                                className="block w-full mt-4 bg-gold-500 text-black-900 px-5 py-3 rounded font-bold">Agenda tu clase</a>
-                        </div>
-                    </div>
-                )}
-            </nav>
-
-            {/* ── BREADCRUMBS ── */}
-            <div className="absolute top-24 left-0 w-full z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                <nav className="flex text-gray-400 text-xs sm:text-sm" aria-label="Breadcrumb">
-                    <ol className="inline-flex items-center space-x-1 md:space-x-3">
-                        <li className="inline-flex items-center">
-                            <Link href="/" className="inline-flex items-center hover:text-white transition-colors">
-                                <i className="fas fa-home mr-2.5"></i> Inicio
-                            </Link>
-                        </li>
-                        <li>
-                            <div className="flex items-center">
-                                <i className="fas fa-chevron-right text-[10px] mx-1"></i>
-                                <span className="ml-1 md:ml-2">Programas</span>
-                            </div>
-                        </li>
-                        <li aria-current="page">
-                            <div className="flex items-center">
-                                <i className="fas fa-chevron-right text-[10px] mx-1"></i>
-                                <span className="ml-1 md:ml-2 text-gold-500 font-semibold">Junior Coaching</span>
-                            </div>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
 
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">

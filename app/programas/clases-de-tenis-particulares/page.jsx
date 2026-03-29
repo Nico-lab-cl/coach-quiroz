@@ -1,38 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 
 export default function Personalizados() {
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
         <div className="min-h-screen bg-[#000000] pb-32 text-white selection:bg-gold-500/30 font-sans">
-            {/* Elite Navbar */}
-            <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-black/90 backdrop-blur-2xl border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
-                    <div className="flex justify-between items-center">
-                        <Link href="/" className="flex items-center gap-4 group">
-                            <div className="w-10 h-10 rounded-full border border-gold-500/30 flex items-center justify-center group-hover:border-gold-500 transition-colors">
-                                <i className="fas fa-arrow-left text-gold-500 text-sm group-hover:-translate-x-1 transition-transform"></i>
-                            </div>
-                            <span className="text-xs font-bold tracking-[0.2em] uppercase text-gray-400 group-hover:text-white transition-colors">Inicio</span>
-                        </Link>
-                        <div className="hidden md:flex items-center gap-2">
-                            <div className="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></div>
-                            <span className="text-xs uppercase tracking-widest text-gold-500 font-bold">Entrenamiento Elite</span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
             {/* Cinematic Hero */}
             <section className="relative pt-40 pb-20 lg:pt-56 lg:pb-32 overflow-hidden">
