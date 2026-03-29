@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Newsletter from '../../../components/Newsletter';
+import ViewContentTracker from '../../../components/ViewContentTracker';
+import WhatsAppTracker from '../../../components/WhatsAppTracker';
 
 const GALLERY = [
     { src: '/images/juniors-gallery/gallery-01.jpg', alt: 'Entrenamiento Juniors 1' },
@@ -25,6 +27,7 @@ export default function JuniorCoachingPage() {
 
     return (
         <div className="min-h-screen bg-black-900 pb-0 selection:bg-gold-500 selection:text-black-900 font-sans">
+            <ViewContentTracker contentName="Junior Tenis" contentCategory="Programas" />
 
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[90vh]">
@@ -57,11 +60,10 @@ export default function JuniorCoachingPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a href="https://wa.me/56932732917?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20Junior%20Coaching"
-                                target="_blank" rel="noopener noreferrer"
+                            <WhatsAppTracker text="Hola, me interesa información sobre Junior Coaching"
                                 className="inline-flex items-center justify-center bg-gradient-to-r from-gold-400 to-gold-600 hover:from-gold-300 hover:to-gold-500 text-black-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(212,175,55,0.4)] w-full sm:w-auto group">
                                 Contáctanos <i className="fab fa-whatsapp ml-2 text-xl group-hover:scale-110 transition-transform"></i>
-                            </a>
+                            </WhatsAppTracker>
                         </div>
                     </div>
                 </div>
@@ -253,11 +255,10 @@ export default function JuniorCoachingPage() {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <a href="https://wa.me/56932732917?text=Hola,%20me%20interesa%20inscribir%20a%20mi%20hijo%20en%20el%20programa%20Mensual%20de%20Junior%20Coaching"
-                            target="_blank" rel="noopener noreferrer"
+                        <WhatsAppTracker text="Hola, me interesa inscribir a mi hijo en el programa Mensual de Junior Coaching"
                             className="inline-flex items-center justify-center bg-white hover:bg-gray-200 text-black-900 px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                             Solicitar Cupo <i className="fas fa-check-circle ml-2"></i>
-                        </a>
+                        </WhatsAppTracker>
                     </div>
                 </div>
             </section>

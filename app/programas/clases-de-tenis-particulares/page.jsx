@@ -1,10 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import ViewContentTracker from '../../../components/ViewContentTracker';
+import WhatsAppTracker from '../../../components/WhatsAppTracker';
 
 export default function Personalizados() {
     return (
         <div className="min-h-screen bg-[#000000] pb-32 text-white selection:bg-gold-500/30 font-sans">
+            <ViewContentTracker contentName="Clases Particulares" contentCategory="Programas" />
 
             {/* Cinematic Hero */}
             <section className="relative pt-40 pb-20 lg:pt-56 lg:pb-32 overflow-hidden">
@@ -56,9 +59,9 @@ export default function Personalizados() {
                             </div>
                         </div>
 
-                        <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20quiero%20empezar%20mi%20camino%20con%20START%20TENIS." target="_blank" rel="noopener noreferrer" className="block w-full py-4 rounded-xl border border-white/10 text-center text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-all">
+                        <WhatsAppTracker text="Hola Coach Quiroz, quiero empezar mi camino con START TENIS." className="block w-full py-4 rounded-xl border border-white/10 text-center text-sm font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-all">
                             Iniciar Camino
-                        </a>
+                        </WhatsAppTracker>
                     </div>
 
                     {/* Foundation Pack (Premium) - The Centerpiece */}
@@ -96,9 +99,9 @@ export default function Personalizados() {
                                 </div>
                             </div>
 
-                            <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20estoy%20listo%20para%20el%20Foundation%20Pack." target="_blank" rel="noopener noreferrer" className="block w-full py-5 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-black text-center text-sm font-black tracking-[0.2em] uppercase hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all">
+                            <WhatsAppTracker text="Hola Coach Quiroz, estoy listo para el Foundation Pack." className="block w-full py-5 rounded-xl bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 text-black text-center text-sm font-black tracking-[0.2em] uppercase hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all">
                                 Postular Inmediatamente
-                            </a>
+                            </WhatsAppTracker>
                         </div>
                     </div>
 
@@ -129,9 +132,9 @@ export default function Personalizados() {
                             </div>
                         </div>
 
-                        <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20quiero%20elevar%20mi%20nivel%20con%20el%20Performance%20Pack." target="_blank" rel="noopener noreferrer" className="block w-full py-4 rounded-xl border border-white/10 text-center text-sm font-bold tracking-widest uppercase hover:bg-gold-500 hover:text-black hover:border-gold-500 transition-all">
+                        <WhatsAppTracker text="Hola Coach Quiroz, quiero elevar mi nivel con el Performance Pack." className="block w-full py-4 rounded-xl border border-white/10 text-center text-sm font-bold tracking-widest uppercase hover:bg-gold-500 hover:text-black hover:border-gold-500 transition-all">
                             Subir de Nivel
-                        </a>
+                        </WhatsAppTracker>
                     </div>
 
                 </div>

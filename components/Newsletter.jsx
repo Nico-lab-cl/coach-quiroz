@@ -27,6 +27,10 @@ export default function Newsletter() {
         if (!email) return;
         setStatus('loading');
         setMessage('');
+
+        // Unique event ID for Meta Deduplication
+        const eventId = `sub_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
+
         try {
             const res = await fetch('/api/newsletter', {
                 method: 'POST',
@@ -35,10 +39,16 @@ export default function Newsletter() {
                     email,
                     ...utmParams,
                     referrer,
+                    eventId,
                 }),
             });
             const data = await res.json();
             if (res.ok) {
+                // Client-side pixel tracking
+                if (typeof window !== 'undefined' && window.fbq) {
+                    window.fbq('track', 'Subscribe', {}, { eventID: eventId });
+                }
+
                 setStatus('success');
                 setMessage(data.message);
                 setEmail('');

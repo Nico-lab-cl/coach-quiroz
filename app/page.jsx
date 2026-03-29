@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Newsletter from '../components/Newsletter';
 import FAQ from '../components/FAQ';
+import WhatsAppTracker from '../components/WhatsAppTracker';
 
 const GALLERY = [
     { src: '/images/gallery-01.jpg', alt: 'Clases de tenis viña del mar - Entrenamiento en cancha' },
@@ -61,10 +62,10 @@ export default function Home() {
                             Entrenamiento de alto rendimiento, análisis biomecánico y estrategia competitiva en la escuela de tenis bycoachquiroz
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
+                            <WhatsAppTracker text="Hola Coach Quiroz, vengo de la página web."
                                 className="bg-gold-500 hover:bg-gold-400 text-black-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)] text-center flex items-center justify-center gap-2">
                                 <span>Empezar ahora</span><i className="fas fa-arrow-right"></i>
-                            </a>
+                            </WhatsAppTracker>
                             <a href="#services"
                                 className="border border-white/30 hover:border-gold-500 hover:text-gold-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all bg-white/5 backdrop-blur-sm text-center">
                                 Ver planes
@@ -113,10 +114,10 @@ export default function Home() {
                                         </div>
                                     ))}
                                 </div>
-                                <a href="https://wa.me/56932732917"
+                                <WhatsAppTracker text="Hola Coach Quiroz, vengo de la página web."
                                     className="inline-flex items-center gap-2 text-gold-500 font-semibold hover:text-white transition-colors group">
                                     Conocer mi metodología <i className="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
-                                </a>
+                                </WhatsAppTracker>
                             </div>
                         </div>
                     </div>
@@ -583,10 +584,10 @@ export default function Home() {
                                     className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-red-500 hover:to-purple-500 hover:text-white transition-all duration-300">
                                     <i className="fab fa-instagram text-lg"></i>
                                 </a>
-                                <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
+                                <WhatsAppTracker text="Hola Coach Quiroz, vengo de la página web."
                                     className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-green-500 hover:text-white transition-all duration-300">
                                     <i className="fab fa-whatsapp text-lg"></i>
-                                </a>
+                                </WhatsAppTracker>
                             </div>
                         </div>
                     </div>

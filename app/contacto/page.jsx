@@ -1,5 +1,6 @@
 import ContactForm from '../../components/ContactForm';
 import Link from 'next/link';
+import WhatsAppTracker from '../../components/WhatsAppTracker';
 
 export const metadata = {
     title: 'Contacto - By Coach Quiroz | Clases de Tenis en Viña del Mar',
@@ -57,7 +58,7 @@ export default function ContactoPage() {
                             </div>
 
                             {/* WhatsApp */}
-                            <a href="https://wa.me/56932732917" target="_blank" rel="noopener noreferrer"
+                            <WhatsAppTracker text="Hola Coach Quiroz, me gustaría solicitar más información de tus clases."
                                 className="flex items-center gap-4 p-5 bg-white/5 border border-white/5 hover:border-green-500/30 rounded-2xl transition-all group hover:bg-green-500/5">
                                 <div className="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all shrink-0">
                                     <i className="fab fa-whatsapp text-xl"></i>
@@ -66,7 +67,7 @@ export default function ContactoPage() {
                                     <p className="text-white font-semibold text-sm">WhatsApp</p>
                                     <p className="text-gray-500 text-sm">+56 9 3273 2917</p>
                                 </div>
-                            </a>
+                            </WhatsAppTracker>
 
                             {/* Email */}
                             <a href="mailto:contacto@bycoachquiroz.cl"

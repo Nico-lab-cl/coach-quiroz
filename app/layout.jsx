@@ -3,6 +3,7 @@ import './globals.css';
 import CookieConsent from '../components/CookieConsent';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import Navbar from '../components/Navbar';
+import MetaPixel from '../components/MetaPixel';
 
 const outfit = Outfit({
     subsets: ['latin'],
@@ -75,6 +76,7 @@ gtag('config', 'G-0XVWQ0THPW');
                 {children}
                 <CookieConsent />
                 <FloatingWhatsApp />
+                <MetaPixel />
             </body>
         </html>
     );

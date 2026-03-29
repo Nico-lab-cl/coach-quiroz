@@ -1,10 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import ViewContentTracker from '../../../components/ViewContentTracker';
+import WhatsAppTracker from '../../../components/WhatsAppTracker';
 
 export default function AfterOfficeCoaching() {
     return (
         <div className="min-h-screen bg-[#050505] pb-20 selection:bg-rose-500/30 selection:text-white">
+            <ViewContentTracker contentName="Tenis para Adultos" contentCategory="Programas" />
 
             {/* Exclusive Hero Section */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
@@ -75,13 +78,12 @@ export default function AfterOfficeCoaching() {
                                 </div>
                             </div>
 
-                            <a href="https://wa.me/56932732917?text=Hola%20Coach%20Quiroz,%20quiero%20reservar%20mi%20cupo%20para%20el%20After%20Office."
-                                target="_blank" rel="noopener noreferrer"
+                            <WhatsAppTracker text="Hola Coach Quiroz, quiero reservar mi cupo para el After Office."
                                 className="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-transparent border-2 border-rose-500 rounded-full hover:bg-rose-500 hover:text-black hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] w-full sm:w-auto overflow-hidden">
                                 <span className="relative z-10 flex items-center gap-2">
                                     Asegurar mi cupo <i className="fab fa-whatsapp text-lg"></i>
                                 </span>
-                            </a>
+                            </WhatsAppTracker>
                         </div>
                     </div>
                 </div>

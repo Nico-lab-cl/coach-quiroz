@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '../../../lib/prisma';
+import { sendMetaEvent } from '../../../lib/meta-capi';
+import { cookies } from 'next/headers';
 
 export async function POST(request) {
     try {
         const body = await request.json();
-        const { email, utmSource, utmMedium, utmCampaign, utmTerm, utmContent, referrer } = body;
+        const { email, utmSource, utmMedium, utmCampaign, utmTerm, utmContent, referrer, eventId } = body;
 
         // Validation
         if (!email || !email.includes('@')) {
@@ -69,6 +71,29 @@ export async function POST(request) {
                 userAgent,
                 referrer: referrer || null,
             },
+        });
+
+        // Track Subscribe in Meta CAPI
+        const cookieStore = cookies();
+        const fbp = cookieStore.get('_fbp')?.value;
+        const fbc = cookieStore.get('_fbc')?.value;
+        const externalId = cookieStore.get('cq_external_id')?.value;
+
+        // Fire and forget (non-blocking)
+        sendMetaEvent({
+            eventName: 'Subscribe',
+            eventId: eventId || `sub_svr_${Date.now()}`,
+            eventSourceUrl: request.headers.get('referer') || '',
+            userData: {
+                email,
+                clientIp: ipAddress,
+                clientUserAgent: userAgent,
+                fbp,
+                fbc,
+                country,
+                city,
+                externalId
+            }
         });
 
         return NextResponse.json(
