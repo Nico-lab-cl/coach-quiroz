@@ -108,7 +108,7 @@ export default function PromocionPage() {
 
                         <div className="relative group order-1 lg:order-2">
                             <div className="absolute -inset-4 bg-rose-500/10 rounded-[2.5rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <img src="/images/gallery-02.jpg" alt="Tenis Adultos" className="relative rounded-[2rem] border border-white/5 w-full h-[500px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
+                            <img src="/images/promo-adultos.png" alt="Tenis Adultos" className="relative rounded-[2rem] border border-white/5 w-full h-[500px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" />
                             <div className="absolute bottom-8 right-8 bg-rose-500/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-lg text-black font-bold text-xs tracking-widest uppercase">
                                 Alta Intensidad
                             </div>
