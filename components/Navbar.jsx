@@ -8,6 +8,20 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full z-50 transition-all duration-300 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/10">
+            {/* Promotion Top Banner */}
+            <Link href="/promocion" className="block bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 py-2.5 px-4 text-center group overflow-hidden relative">
+                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative z-10 flex items-center justify-center gap-3">
+                    <span className="bg-black text-gold-500 text-[10px] font-black px-2 py-0.5 rounded-md uppercase tracking-tighter">Oferta</span>
+                    <p className="text-black-900 text-xs sm:text-sm font-bold tracking-tight">
+                        ¡Aprovecha tu <span className="uppercase text-black underline decoration-2 underline-offset-2">clase de prueba gratis</span> en nuestros programas Junior y After Office! 
+                        <span className="hidden sm:inline ml-2 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all inline-block">Ver más <i className="fas fa-arrow-right ml-1"></i></span>
+                    </p>
+                </div>
+                {/* Subtle shimmer effect */}
+                <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[-20deg] animate-[shimmer_3s_infinite] pointer-events-none"></div>
+            </Link>
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     <Link href="/" className="flex-shrink-0 flex items-center group cursor-pointer text-white">
