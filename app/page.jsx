@@ -54,8 +54,8 @@ export default function Home() {
                         <span className="inline-block py-1 px-3 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-500 text-sm font-semibold tracking-wider mb-6">
                             ALTO RENDIMIENTO Y ESTRATEGIA
                         </span>
-                        <h1 className="text-5xl sm:text-7xl font-bold leading-tight mb-6">
-                            Clases de tenis en <br />
+                        <h1 className="text-[2.2rem] xs:text-[2.5rem] sm:text-7xl font-bold leading-[1.1] mb-6 tracking-tight">
+                            Clases de tenis <br className="sm:hidden" /> en <br className="hidden sm:block" />
                             <span className="text-gradient">Viña del Mar y Concón</span>
                         </h1>
                         <p className="text-xl sm:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
