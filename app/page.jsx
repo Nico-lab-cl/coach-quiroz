@@ -387,9 +387,15 @@ export default function Home() {
                                             <span className="leading-relaxed">8 hrs mensuales</span>
                                         </li>
                                     </ul>
+                                    <WhatsAppTracker 
+                                        text="Hola coach quiero la clase de prueba gratis para junior coaching"
+                                        className="w-full text-center bg-gold-500 hover:bg-gold-400 text-black-900 font-black py-4 rounded-xl transition-all shadow-[0_0_25px_rgba(212,175,55,0.3)] text-lg flex items-center justify-center gap-2 mb-3 cursor-pointer"
+                                    >
+                                        <i className="fab fa-whatsapp text-xl"></i> CLASE DE PRUEBA <span className="underline decoration-black decoration-2 underline-offset-4">GRATIS</span>
+                                    </WhatsAppTracker>
                                     <Link href="/programas/junior-tenis"
-                                        className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
-                                        Ver Detalles y Reservar
+                                        className="w-full text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-all text-sm block border border-white/10">
+                                        Ver Detalles del Programa
                                     </Link>
                                 </div>
 
@@ -424,9 +430,15 @@ export default function Home() {
                                             <span className="leading-relaxed">12 hrs mensuales</span>
                                         </li>
                                     </ul>
+                                    <WhatsAppTracker 
+                                        text="Hola coach quiero la clase de prueba gratis para adultos"
+                                        className="w-full text-center bg-gold-500 hover:bg-gold-400 text-black-900 font-black py-4 rounded-xl transition-all shadow-[0_0_25px_rgba(212,175,55,0.3)] text-lg flex items-center justify-center gap-2 mb-3 cursor-pointer"
+                                    >
+                                        <i className="fab fa-whatsapp text-xl"></i> CLASE DE PRUEBA <span className="underline decoration-black decoration-2 underline-offset-4">GRATIS</span>
+                                    </WhatsAppTracker>
                                     <Link href="/programas/tenis-para-adultos"
-                                        className="w-full text-center bg-white hover:bg-gray-200 text-black-900 font-bold py-4 rounded-xl transition-all shadow-lg text-lg block">
-                                        Ver Detalles y Reservar
+                                        className="w-full text-center bg-white/10 hover:bg-white/20 text-white font-bold py-3 rounded-xl transition-all text-sm block border border-white/10">
+                                        Ver Detalles del Programa
                                     </Link>
                                 </div>
                             </div>
