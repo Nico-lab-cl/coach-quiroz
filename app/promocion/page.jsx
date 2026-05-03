@@ -17,20 +17,20 @@ export default function PromocionPage() {
                 </div>
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 text-center">
-                    <span className="inline-block border border-gold-500/30 bg-gold-500/10 text-gold-500 text-[10px] font-black tracking-[0.4em] uppercase px-6 py-2 rounded-full mb-8 animate-pulse shadow-[0_0_20px_rgba(212,175,55,0.2)]">
-                        Oferta de Tiempo Limitado
+                    <span className="inline-flex items-center gap-2 bg-red-600 text-white text-[11px] font-black tracking-widest uppercase px-4 py-1.5 rounded-md mb-8 animate-bounce shadow-[0_0_20px_rgba(220,38,38,0.4)]">
+                        OFERTA POR TIEMPO LIMITADO
                     </span>
                     <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-8 tracking-tighter uppercase leading-none">
                         Tu Clase de Prueba <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-600 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">100% GRATIS</span>
                     </h1>
                     <p className="text-xl sm:text-2xl text-gray-400 mb-12 font-light max-w-3xl mx-auto leading-relaxed">
-                        Iníciate en el tenis con un estándar europeo. Cupos limitados para nuestros programas <span className="text-white font-medium">Junior</span> y <span className="text-white font-medium">After Office</span>.
+                        Iníciate en el tenis con un estándar europeo. Cupos limitados para nuestros programas <span className="text-gold-500 font-bold italic">Junior Tenis</span> y <span className="text-rose-500 font-bold italic">Tenis para Adultos</span>.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                         <a href="#junior" className="text-gray-300 hover:text-gold-500 transition-colors uppercase tracking-[0.2em] text-sm font-bold">Junior Tenis</a>
                         <div className="hidden sm:block w-2 h-2 rounded-full bg-gold-500/20"></div>
-                        <a href="#adultos" className="text-gray-300 hover:text-gold-500 transition-colors uppercase tracking-[0.2em] text-sm font-bold">After Office</a>
+                        <a href="#adultos" className="text-gray-300 hover:text-rose-500 transition-colors uppercase tracking-[0.2em] text-sm font-bold">Tenis para Adultos</a>
                     </div>
                 </div>
             </section>
@@ -81,7 +81,7 @@ export default function PromocionPage() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row">
                         <div className="order-2 lg:order-1">
-                            <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-white">After Office <span className="text-rose-500">Adultos</span></h2>
+                            <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-white"><span className="text-rose-500">Tenis</span> para Adultos</h2>
                             <p className="text-gray-400 text-lg leading-relaxed mb-8">
                                 La vía de escape perfecta después del trabajo. Entrenamiento táctico real, alta intensidad cardiovascular y un ambiente adulto exclusivo para quienes buscan competir y mejorar su nivel.
                             </p>
