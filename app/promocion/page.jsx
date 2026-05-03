@@ -12,8 +12,8 @@ export default function PromocionPage() {
             {/* Cinematic Promo Hero */}
             <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[80vh]">
                 <div className="absolute inset-0 z-0">
-                    <img src="/images/hero-bg.jpg" alt="Promo Background" className="w-full h-full object-cover opacity-20 grayscale" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/95 via-transparent to-[#050505]"></div>
+                    <img src="/images/hero-bg.jpg" alt="Promo Background" className="w-full h-full object-cover opacity-40 grayscale-[50%]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-[#050505]/40 to-[#050505]"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 text-center">
@@ -22,7 +22,7 @@ export default function PromocionPage() {
                     </span>
                     <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-8 tracking-tighter uppercase leading-none">
                         Tu Clase de Prueba <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-yellow-600 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">100% GRATIS</span>
+                        <span className="text-gold-500 drop-shadow-[0_4px_15px_rgba(212,175,55,0.3)]">100% GRATIS</span>
                     </h1>
                     <p className="text-xl sm:text-2xl text-gray-400 mb-12 font-light max-w-3xl mx-auto leading-relaxed">
                         Iníciate en el tenis con un estándar europeo. Cupos limitados para nuestros programas <span className="text-gold-500 font-bold italic">Junior Tenis</span> y <span className="text-rose-500 font-bold italic">Tenis para Adultos</span>.
