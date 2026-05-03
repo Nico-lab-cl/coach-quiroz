@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className="fixed w-full z-50 transition-all duration-300 bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/10">
             {/* Promotion Top Banner */}
-            <Link href="/promocion" className="block bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 py-2.5 px-4 text-center group overflow-hidden relative">
+            <Link href="/clases-de-tenis-gratis" className="block bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 py-2.5 px-4 text-center group overflow-hidden relative">
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10 flex items-center justify-center gap-3">
                     <span className="bg-red-600 text-white text-[10px] font-black px-2 py-0.5 rounded-md uppercase tracking-widest animate-bounce shadow-[0_0_15px_rgba(220,38,38,0.5)]">OFERTA</span>

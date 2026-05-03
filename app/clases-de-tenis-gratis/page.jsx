@@ -21,8 +21,8 @@ export default function PromocionPage() {
                         OFERTA POR TIEMPO LIMITADO
                     </span>
                     <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-8 tracking-tighter uppercase leading-none">
-                        Tu Clase de Prueba <br />
-                        <span className="text-gold-500 drop-shadow-[0_4px_15px_rgba(212,175,55,0.3)]">100% GRATIS</span>
+                        Clases de Tenis Gratis <br />
+                        <span className="text-gold-500 drop-shadow-[0_4px_15px_rgba(212,175,55,0.3)]">Tu prueba 100% free</span>
                     </h1>
                     <p className="text-xl sm:text-2xl text-gray-400 mb-12 font-light max-w-3xl mx-auto leading-relaxed">
                         Iníciate en el tenis con un estándar europeo. Cupos limitados para nuestros programas <span className="text-gold-500 font-bold italic">Junior Tenis</span> y <span className="text-rose-500 font-bold italic">Tenis para Adultos</span>.
