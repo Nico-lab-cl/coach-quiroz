@@ -49,7 +49,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-r from-black-900 via-black-900/90 to-transparent sm:w-[75%]"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black-900 via-transparent to-transparent"></div>
                 </div>
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left w-full h-full flex flex-col justify-center">
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left w-full h-full flex flex-col justify-center">
                     <div className="max-w-3xl">
                         <span className="inline-block py-1 px-3 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-500 text-sm font-semibold tracking-wider mb-6">
                             ALTO RENDIMIENTO Y ESTRATEGIA
