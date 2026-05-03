@@ -59,10 +59,14 @@ export default function JuniorCoachingPage() {
                             Junior Coaching es un programa de formación integral dirigido a niños y jóvenes, enfocado en el desarrollo técnico, físico y mental dentro del tenis.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4 items-center">
+                            <WhatsAppTracker text="Hola coach quiero la clase de prueba gratis para junior coaching"
+                                className="inline-flex items-center justify-center bg-gold-500 hover:bg-gold-400 text-black-900 px-8 py-4 rounded-full font-black text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(212,175,55,0.4)] w-full sm:w-auto group cursor-pointer">
+                                <i className="fab fa-whatsapp mr-2 text-xl"></i> PRUEBA <span className="underline decoration-black decoration-2 underline-offset-4 ml-1">GRATIS</span>
+                            </WhatsAppTracker>
                             <WhatsAppTracker text="Hola, me interesa información sobre Junior Coaching"
-                                className="inline-flex items-center justify-center bg-gradient-to-r from-gold-400 to-gold-600 hover:from-gold-300 hover:to-gold-500 text-black-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(212,175,55,0.4)] w-full sm:w-auto group">
-                                Contáctanos <i className="fab fa-whatsapp ml-2 text-xl group-hover:scale-110 transition-transform"></i>
+                                className="inline-flex items-center justify-center border border-white/20 hover:border-gold-500/50 text-white px-8 py-4 rounded-full font-bold text-lg transition-all w-full sm:w-auto group">
+                                Contáctanos <i className="fas fa-arrow-right ml-2 text-sm opacity-50 group-hover:opacity-100 transition-opacity"></i>
                             </WhatsAppTracker>
                         </div>
                     </div>
@@ -254,9 +258,13 @@ export default function JuniorCoachingPage() {
                         </div>
                     </div>
 
-                    <div className="mt-16 text-center">
+                    <div className="mt-16 flex flex-col sm:flex-row gap-6 justify-center items-center">
+                        <WhatsAppTracker text="Hola coach quiero la clase de prueba gratis para junior coaching"
+                            className="inline-flex items-center justify-center bg-gold-500 hover:bg-gold-400 text-black-900 px-10 py-5 rounded-full font-black text-xl transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(212,175,55,0.4)] w-full sm:w-auto cursor-pointer">
+                            <i className="fab fa-whatsapp mr-2 text-2xl"></i> CLASE DE PRUEBA <span className="underline decoration-black decoration-2 underline-offset-4 ml-2">GRATIS</span>
+                        </WhatsAppTracker>
                         <WhatsAppTracker text="Hola, me interesa inscribir a mi hijo en el programa Mensual de Junior Coaching"
-                            className="inline-flex items-center justify-center bg-white hover:bg-gray-200 text-black-900 px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                            className="inline-flex items-center justify-center border border-white/20 text-white hover:bg-white/5 px-10 py-5 rounded-full font-bold text-lg transition-all w-full sm:w-auto">
                             Solicitar Cupo <i className="fas fa-check-circle ml-2"></i>
                         </WhatsAppTracker>
                     </div>

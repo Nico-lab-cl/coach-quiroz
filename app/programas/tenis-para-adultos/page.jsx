@@ -78,12 +78,16 @@ export default function AfterOfficeCoaching() {
                                 </div>
                             </div>
 
-                            <WhatsAppTracker text="Hola Coach Quiroz, quiero reservar mi cupo para el After Office."
-                                className="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-transparent border-2 border-rose-500 rounded-full hover:bg-rose-500 hover:text-black hover:shadow-[0_0_20px_rgba(244,63,94,0.4)] w-full sm:w-auto overflow-hidden">
-                                <span className="relative z-10 flex items-center gap-2">
-                                    Asegurar mi cupo <i className="fab fa-whatsapp text-lg"></i>
-                                </span>
-                            </WhatsAppTracker>
+                            <div className="flex flex-col sm:flex-row gap-4 items-center">
+                                <WhatsAppTracker text="Hola coach quiero la clase de prueba gratis para adultos"
+                                    className="inline-flex items-center justify-center bg-rose-500 hover:bg-rose-400 text-black px-8 py-4 rounded-full font-black text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(244,63,94,0.4)] w-full sm:w-auto group cursor-pointer">
+                                    <i className="fab fa-whatsapp mr-2 text-xl"></i> CLASE DE PRUEBA <span className="underline decoration-black decoration-2 underline-offset-4 ml-1">GRATIS</span>
+                                </WhatsAppTracker>
+                                <WhatsAppTracker text="Hola Coach Quiroz, quiero reservar mi cupo para el After Office."
+                                    className="inline-flex items-center justify-center border-2 border-white/10 hover:border-rose-500/50 text-white px-8 py-4 rounded-full font-bold text-lg transition-all w-full sm:w-auto group">
+                                    Asegurar mi cupo <i className="fas fa-arrow-right ml-2 text-sm opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                                </WhatsAppTracker>
+                            </div>
                         </div>
                     </div>
                 </div>
